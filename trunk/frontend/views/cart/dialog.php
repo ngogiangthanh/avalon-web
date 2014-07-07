@@ -8,13 +8,13 @@
 </style>
 <div class="modal fade" id="dialogCartID" tabindex="-1" role="dialog" >
     <div class="modal-dialog">
-        <div class="modal-content" style="width: 800px;">
-            <div class="row"  >
+        <div class="modal-content"  style="width: 800px">
+            <div class="row">
                 <div class="col-sm-12 col-md-12" >
                     <button type="button" class="close close-cart" data-dismiss="modal" aria-hidden="true" >
                         ×
                     </button>
-                    <div class="tab-content col-md-12" id="dialogContentCartID" >
+                    <div class="tab-content" id="dialogContentCartID">
                         <?php
                         include_once 'index.php';
                         ?>

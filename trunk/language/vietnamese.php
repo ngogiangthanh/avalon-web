@@ -54,6 +54,7 @@ define('INFOR_PRODUCT_DETAIL', 'Thông tin sản phẩm');
 //cart
 define('ADD_PRODUCT_SUCCESS', 'Thêm mới sản phẩm vào giỏ hàng thành công!');
 define('UPDATE_PRODUCT_SUCCESS', 'Cập nhật số lượng vào giỏ hàng thành công!');
+define('UPDATE_PRODUCT_OUT_OF_RANGE', 'Số lượng sản phẩm yêu cầu đạt quá 100 trong giỏ hàng!');
 
 //===============================================================================
 //register
@@ -193,7 +194,9 @@ define('CART_CHANGE_SUCCESS', 'Thay doi thong tin ca nhan thanh cong!');
 define('CART_USEDTO_EMAIL', 'Email này đã được sử dụng để đăng ký trước đó!');
 define('CART_CHANGE_INFO_LOSE', 'Thay doi thong tin ca nhan that bai!');
 
-
+define('CART_DELETE_ITEM_SUCCESS', 'Xóa sản phẩm khỏi giỏ hàng thành công!');
+define('CART_INVALID_AMOUNT', 'Số lượng không phù hợp!');
+define('CART_UPDATE_ITEM_SUCCESS', 'Cập nhật sản phẩm thành công!');
 //===============================================================================
 //đây là phần check lỗi 
 //===============================================================================
