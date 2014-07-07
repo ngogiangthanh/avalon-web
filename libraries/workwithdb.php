@@ -17,6 +17,10 @@ class workwithdb {
         define('CONFIG_USERNAME', 'root');
         define('CONFIG_PASSWORD', '');
         define('CONFIG_DATABASE', 'avalon');
+//        define('CONFIG_HOST_NAME', 'sql309.0fees.us');
+//        define('CONFIG_USERNAME', '0fe_15031904');
+//        define('CONFIG_PASSWORD', '1675349');
+//        define('CONFIG_DATABASE', '0fe_15031904_avalon');
        // define('BASEURL' , 'http://localhost/myshop/');
        // define('BASEPATH', './');
         

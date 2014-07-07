@@ -5,7 +5,7 @@
             <hr />
             <br />
             <!-- You should not remove the footer link back. -->
-            <p class="text-center">@Copyright 2014  - <a href="#">Blue Dolphin</a> - Designed by <a href="https://www.facebook.com/ngogiangthanhblog?ref=hl" target="_blank">Group 2TH</a></p>
+            <p class="text-center">@Copyright 2014  - <a href="#">Blue Dolphin</a> - Designed by <a href="https://www.facebook.com/ngogiangthanhblog" target="_blank">Group 2TH</a></p>
             <br />
         </div>
     </div>
