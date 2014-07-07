@@ -1,0 +1,41 @@
+#set the server timezone
+SetEnv TZ Asia/Ho_Chi_Minh
+# set the default ErrorDocument
+ErrorDocument 400 "Bad request"
+ErrorDocument 401 "Authorization Required"
+ErrorDocument 403 "Forbidden" 
+ErrorDocument 404 "Wrong page"
+ErrorDocument 500 "Internal Server Error" 
+# Disable list directory
+Options All -Indexes 
+#Set only use route.php
+RewriteEngine On
+#DirectoryIndex index.html index.htm default.htm index.php index.php3 index.phtml index.php5 index.shtml mwindex.phtml
+DirectoryIndex route.php
+<files .htaccess> 
+order allow,deny 
+deny from all 
+</files> 
+<IfModule mod_php5.c>
+    #Session timeout
+    php_value session.cookie_lifetime 3600
+    php_value session.gc_maxlifetime 3600
+</IfModule>
+<Files *.php>
+    Order Deny,Allow
+    Deny from all
+    Allow from 127.0.0.1
+</Files>
+
+<Files route.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files admin.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
+<Files captcha.php>
+    Order Allow,Deny
+    Allow from all
+</Files>
