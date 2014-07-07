@@ -185,7 +185,8 @@
                                         $(document).ready(function() {//login
                                             var obj = {
                                                 "alertAddSucess": "<?= ADD_PRODUCT_SUCCESS ?>",
-                                                "alertUpdateSucess": "<?= UPDATE_PRODUCT_SUCCESS ?>"
+                                                "alertUpdateSucess": "<?= UPDATE_PRODUCT_SUCCESS ?>",
+                                                "alertOutOfRangeCart": "<?= UPDATE_PRODUCT_OUT_OF_RANGE ?>",
                                             }
                                             $.zCart(obj);
                                             //khuyen mai

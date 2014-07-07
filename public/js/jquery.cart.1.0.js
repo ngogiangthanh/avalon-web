@@ -21,6 +21,7 @@
             "idInputPriceOff": "#price_off_real",
             "alertAddSucess": "Add product successfully!",
             "alertUpdateSucess": "Update product successfully!",
+            "alertOutOfRangeCart": "Cart was out of range!",
             "btnDelete": ".deleteElement"
         };
         options = $.extend(defaults, options);
@@ -73,7 +74,7 @@
                     toastr.success(options.alertUpdateSucess);
                 }
                 else if (data === "out_of_cart") {
-                    toastr.error('So lương hien tai trong gio hang va mua vượt quá giới hạn cho phép > 100 đơn vị!');
+                    toastr.error(options.alertOutOfRangeCart);
                     amountInDetailDialog.focus();
                 }
             });
@@ -116,17 +117,20 @@
         //doi url
         function loadURL2Browser()
         {
-            window.history.pushState(null, "Cart", "?content=home&type=cart");
+            window.history.pushState(null, null, "?content=home&type=cart");
         }
     };
 
-    $.zDeleteItemCart = function(options)
+    $.zUpdateItemCart = function(options)
     {
         var defaults = {
             "btnDelete": ".deleteElement",
             "dialogCartContent": "#dialogContentCartID",
             "btnUpdate": ".updateElement",
-            "idInforUser": "#inforuser"
+            "idInforUser": "#inforuser",
+            "alertDeleteSuccess": "Delete successfully!",
+            "alertInvalidParam": "Parameter invalid!",
+            "alertUpdateSuccess": "Update successfully!"
         };
         options = $.extend(defaults, options);
         var btnDelete = $(options.btnDelete);
@@ -163,7 +167,7 @@
             }).done(function(data) {
                 if (data === "true")
                 {
-                    toastr.success('Xoa san pham thanh cong!');
+                    toastr.success(options.alertDeleteSuccess);
                     $(dialogCartContent).load(urlFormCart).hide().fadeIn("slow");
                     $(idInforUser).load(urlUser).hide().fadeIn("slow");
                 }
@@ -173,12 +177,12 @@
         function updateElement() {
             if (!amount.match(amountRegex))
             {
-                toastr.error('Tham so khong phu hop!!!');
+                toastr.error(options.alertInvalidParam);
                 $("#amount_" + $(this).data("id")).focus();
             }
             else if (amount > 100 || amount < 1)
             {
-                toastr.error('Tham so khong phu hop!!!');
+                toastr.error(options.alertInvalidParam);
                 $("#amount_" + $(this).data("id")).focus();
             }
             else {
@@ -189,13 +193,64 @@
                 }).done(function(data) {
                     if (data === "true")
                     {
-                        toastr.success('Cap nhat thanh cong so luong!');
+                        toastr.success(options.alertUpdateSuccess);
                         $(dialogCartContent).load(urlFormCart).hide().fadeIn("slow");
                         $(idInforUser).load(urlUser).hide().fadeIn("slow");
                     }
                 });
             }
             return false;
+        }
+    }
+
+
+    $.zSendCart = function(options)
+    {
+        var defaults = {
+            "btnSend": "#btnGuiDH",
+            "captcha": "#captcha",
+            "contentCart": "#dialogContentCartID",
+            "inforUser": "#inforuser",
+            "alertEmptyCart": "Giỏ hàng rỗng!",
+            "alertSuccessCart": "Gửi thành công!",
+            "alertIncorrect": "Captcha không khớp!"
+        };
+        options = $.extend(defaults, options);
+
+        var btnSend = $(options.btnSend);
+        var captchar = $(options.captcha);
+        var contentCart = $(options.contentCart);
+        var inforUser = $(options.inforUser);
+        var urlCart = "route.php?content=reloadcartindex";
+        var urlUser = "route.php?content=reloaduser";
+        init();
+        //Ham khoi tao
+        function init() {
+            $(btnSend).click(function() {
+                var captcha = $(captchar).val();
+                console.log(captcha);
+                if (captcha === "") {
+                    toastr.error(options.alertEmptyCart);
+                    $(captchar).focus();
+                    return false;
+                }
+                $.ajax({
+                    type: "GET",
+                    url: 'route.php?content=sendcart&captcha=' + captcha,
+                    cache: false
+                }).done(function(data) {
+                    if (data === "true")
+                    {
+                        toastr.success(options.alertSuccessCart);
+                        $(contentCart).load(urlCart).hide().fadeIn("slow");
+                        $(inforUser).load(urlUser).hide().fadeIn("slow");
+                    }
+                    else {
+                        console.log(data);
+                        toastr.error(options.alertIncorrect);
+                    }
+                });
+            });
         }
     }
 })(jQuery);

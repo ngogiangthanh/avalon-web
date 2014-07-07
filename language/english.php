@@ -53,8 +53,7 @@ define('INFOR_PRODUCT_DETAIL', 'Product information');
 //cart
 define('ADD_PRODUCT_SUCCESS', 'Add product successful!');
 define('UPDATE_PRODUCT_SUCCESS', 'Update product successful!');
-
-
+define('UPDATE_PRODUCT_OUT_OF_RANGE', 'Product amount in cart more than 100!');
 //===============================================================================
 //register
 //===============================================================================
@@ -193,6 +192,9 @@ define('CART_CHANGE_SUCCESS', 'Change information success!!');
 define('CART_USEDTO_EMAIL', ' Email is already used!!');
 define('CART_CHANGE_INFO_LOSE', 'Change information fail!!');
 
+define('CART_DELETE_ITEM_SUCCESS', 'Delete product successfully!');
+define('CART_INVALID_AMOUNT', 'Invalid amount of product!');
+define('CART_UPDATE_ITEM_SUCCESS', 'Update amount of product successfully!');
 
 //===============================================================================
 //đây là phần check lỗi 
