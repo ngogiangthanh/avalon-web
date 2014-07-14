@@ -63,9 +63,6 @@
                 goNext();
                 e.stopImmediatePropagation();
             });
-            if ($(options.total === 1)) {
-                $("#categroy_" + options.categoryID).empty();
-            }
         }
 
         //=============================================
@@ -107,6 +104,9 @@
         //=============================================
         function pageInfo() {
             lblPageInfo.text(" / " + options.total);
+            if (options.total <= 1) {
+                $("#categroy_" + options.categoryID).empty();
+            }
         }
 
         //=============================================
