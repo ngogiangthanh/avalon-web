@@ -3,7 +3,7 @@ SetEnv TZ Asia/Ho_Chi_Minh
 # set the default ErrorDocument
 ErrorDocument 400 "Bad request"
 ErrorDocument 401 "Authorization Required"
-ErrorDocument 403 "VIRUS DETECTION" 
+ErrorDocument 403 "Virus detected" 
 ErrorDocument 404 "Wrong page"
 ErrorDocument 500 "Internal Server Error" 
 # Disable list directory

@@ -12,16 +12,17 @@
                     <li class="goPrevious" id="goPrevious_<?= $item['ID'] ?>">&lsaquo;&lsaquo;<?= PREVIOUS_PAGE ?></li>
                     <li>
                         <div class="currentPage numberPage" id="currentPage_<?= $item['ID'] ?>"></div>
-                        <div class="pageInfo numberPage" id="pageInfo_<?= $item['ID'] ?>">6</div>
+                        <div class="pageInfo numberPage" id="pageInfo_<?= $item['ID'] ?>">/ 1</div>
                     </li>
                     <li class="goNext"  id="goNext_<?= $item['ID'] ?>"><?= NEXT_PAGE ?> &rsaquo;&rsaquo;</li>
                 </ul>
                 <div class="clr"></div>
-                <br/>
             </div>
         </div>
-    </div>
+                <br/>
+                <br/>
     <hr/>
+    </div>
     <?php
 }
 ?>
