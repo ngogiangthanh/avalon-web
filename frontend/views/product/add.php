@@ -125,6 +125,18 @@
                         <?php
                         if (isset($_SESSION['login']) && $_SESSION['login'][11] == '0') {
                             ?>
+                        <tr >
+                            <td >
+                                <a onclick="$('#largeModal').modal('hide')" data-toggle="modal" data-target="#dialogCartID" id="dialogCartIDLink1">
+                                        go cart
+                                </a>
+                            </td>
+                            <td >
+                                <a onclick="$('#largeModal').modal('hide')" href="#.service">
+                                    buy continue
+                                </a>
+                            </td>
+                        </tr>
                             <tr>
                                 <td colspan="2" align="center">
                                     <div id="add2CartID" style="background-color:#ff9000;width: 180px;padding: 10px;border-radius: 3px;cursor: pointer;color: white;font-size: 17px;font-weight: bold;">
@@ -182,7 +194,8 @@
 
 <script src="./public/js/jquery.cart.1.0.js"></script>
 <script type="text/javascript">
-                                        $(document).ready(function() {//login
+                                        $(document).ready(function() {
+                                            //login
                                             var obj = {
                                                 "alertAddSucess": "<?= ADD_PRODUCT_SUCCESS ?>",
                                                 "alertUpdateSucess": "<?= UPDATE_PRODUCT_SUCCESS ?>",
@@ -225,5 +238,6 @@
                                             $('#largeModal').on('hidden.bs.modal', function() {
                                                 window.history.pushState(null, null, "?");
                                             });
+                                            $.zOpenCart();
                                         });
 </script>
