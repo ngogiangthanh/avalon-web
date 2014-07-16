@@ -4,7 +4,7 @@
  * File chua thong tin define ngon ngu tieng anh
  * 
  */
-define('WEBSITENAME', 'My Shop');
+define('WEBSITENAME', 'Blue Dolphin');
 define('ADMINISTRATOR', 'Management');
 define('LANGUAGE', 'Language');
 define('ENGLISH', 'English');
