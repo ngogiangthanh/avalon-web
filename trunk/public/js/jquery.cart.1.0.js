@@ -92,12 +92,14 @@
         //=============================================  
         var defaults = {
             "dialogCartContent": "#dialogContentCartID",
-            "btnOpenCart": "#dialogCartIDLink"
+            "btnOpenCart": "#dialogCartIDLink",
+            "btnOpenCart1": "#dialogCartIDLink1"
         };
         //Cac bien khoi tao
         options = $.extend(defaults, options);
         var dialogCartContent = $(options.dialogCartContent);
         var btnOpenCart = $(options.btnOpenCart);
+        var btnOpenCart1 = $(options.btnOpenCart1);
         var urlFormCart = 'route.php?content=reloadcartindex';
         //Cac ham dc goi
         init();
@@ -105,6 +107,9 @@
         function init()
         {
             btnOpenCart.on("click", function(e) {
+                loadData();
+            });
+            btnOpenCart1.on("click", function(e) {
                 loadData();
             });
         }
