@@ -22,10 +22,10 @@
         $mail->Port = "465";
         $mail->SMTPSecure = "none";
         $mail->SMTPAuth = true;
-        $mail->Username = "lnquiry@bluedolphin.com.vn";
-        $mail->Password = "Dolphin2014";
+        $mail->Username = "avalonvietnam@gmail.com";
+        $mail->Password = "avalon1234";
         $mail->addReplyTo($_POST['email'], $_POST['email']);
-        $mail->From = "lnquiry@bluedolphin.com.vn";
+        $mail->From = "avalonvietnam@gmail.com";
         $mail->FromName = "Avalon";
         $mail->addAddress($_POST['email'], $_POST['email']);
         $mail->Subject = $_POST['title'];
