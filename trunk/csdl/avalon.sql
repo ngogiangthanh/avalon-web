@@ -2,10 +2,10 @@
 -- version 4.1.12
 -- http://www.phpmyadmin.net
 --
--- Host: 127.0.0.1
--- Generation Time: Jul 02, 2014 at 07:55 PM
--- Server version: 5.6.16
--- PHP Version: 5.5.11
+-- Client :  127.0.0.1
+-- Généré le :  Mer 16 Juillet 2014 à 18:06
+-- Version du serveur :  5.6.16
+-- Version de PHP :  5.5.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -17,13 +17,36 @@ SET time_zone = "+00:00";
 /*!40101 SET NAMES utf8 */;
 
 --
--- Database: `avalon`
+-- Base de données :  `avalon`
 --
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `category`
+-- Structure de la table `branches`
+--
+
+CREATE TABLE IF NOT EXISTS `branches` (
+  `ID` int(11) NOT NULL AUTO_INCREMENT,
+  `NAME_BRANCH` varchar(255) COLLATE utf8_bin NOT NULL,
+  `DESCRIPTE_BRANCH` text COLLATE utf8_bin NOT NULL,
+  PRIMARY KEY (`ID`)
+) ENGINE=InnoDB  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=14 ;
+
+--
+-- Contenu de la table `branches`
+--
+
+INSERT INTO `branches` (`ID`, `NAME_BRANCH`, `DESCRIPTE_BRANCH`) VALUES
+(10, 'chi nhánh 1', '<div>Nếu bạn là thành viên thì hãy&nbsp;<a target=\\"\\" rel=\\"\\">đăng nhập&nbsp;</a>để mua</div><div>Nếu bạn không phải là thành viên :</div><div>-<u>&nbsp;</u><a target=\\"\\" rel=\\"\\"><u>đăng ký</u>&nbsp;</a>tại đây.</div><div>-&nbsp;<a target=\\"\\" rel=\\"\\">Liên hệ&nbsp;</a>để biết nhiều thông tin hơn .</div><div>-đi đến Blue Dolphin Co.Ltd:131D/5 Nguyễn Văn</div><div>Cừ nối dài, Ninh Kiều, Tp Cần Thơ.</div>'),
+(11, 'chi nhánh 2', '<div>Nếu bạn là thành viên thì hãy&nbsp;<a target=\\"\\" rel=\\"\\">đăng nhập&nbsp;</a>để mua</div><div>Nếu bạn không phải là thành viên :</div><div>-<u>&nbsp;</u><a target=\\"\\" rel=\\"\\">đăng ký&nbsp;</a>tại đây.</div><div>-&nbsp;<a target=\\"\\" rel=\\"\\">Liên hệ&nbsp;</a>để biết nhiều thông tin hơn .</div><div>-đi đến Blue Dolphin Co.Ltd:131D/5 Nguyễn Văn</div><div>Cừ nối dài, Ninh Kiều, Tp Cần Thơ.</div>'),
+(12, 'chi nhánh 3', '<div>Nếu bạn là thành viên thì hãy&nbsp;<a target=\\"\\" rel=\\"\\">đăng nhập&nbsp;</a>để mua</div><div>Nếu bạn không phải là thành viên :</div><div>-<u>&nbsp;</u><a target=\\"\\" rel=\\"\\">đăng ký&nbsp;</a>tại đây.</div><div>-&nbsp;<a target=\\"\\" rel=\\"\\">Liên hệ&nbsp;</a>để biết nhiều thông tin hơn .</div><div>-đi đến Blue Dolphin Co.Ltd:131D/5 Nguyễn Văn</div><div>Cừ nối dài, Ninh Kiều, Tp Cần Thơ.</div>'),
+(13, 'chi nhánh 4', '<div>Nếu bạn là thành viên thì hãy&nbsp;<a target=\\"\\" rel=\\"\\">đăng nhập&nbsp;</a>để mua</div><div>Nếu bạn không phải là thành viên :</div><div>-<u>&nbsp;</u><a target=\\"\\" rel=\\"\\">đăng ký&nbsp;</a>tại đây.</div><div>-&nbsp;<a target=\\"\\" rel=\\"\\">Liên hệ&nbsp;</a>để biết nhiều thông tin hơn .</div><div>-đi đến Blue Dolphin Co.Ltd:131D/5 Nguyễn Văn</div><div>Cừ nối dài, Ninh Kiều, Tp Cần Thơ.</div>');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `category`
 --
 
 CREATE TABLE IF NOT EXISTS `category` (
@@ -34,7 +57,7 @@ CREATE TABLE IF NOT EXISTS `category` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=19 ;
 
 --
--- Dumping data for table `category`
+-- Contenu de la table `category`
 --
 
 INSERT INTO `category` (`ID`, `NAME_CAT`) VALUES
@@ -46,7 +69,7 @@ INSERT INTO `category` (`ID`, `NAME_CAT`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `contact`
+-- Structure de la table `contact`
 --
 
 CREATE TABLE IF NOT EXISTS `contact` (
@@ -57,20 +80,21 @@ CREATE TABLE IF NOT EXISTS `contact` (
   `RESPONE` text COLLATE utf8_bin,
   `STATUS` tinyint(1) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=15 ;
 
 --
--- Dumping data for table `contact`
+-- Contenu de la table `contact`
 --
 
 INSERT INTO `contact` (`ID`, `NAME`, `EMAIL`, `CONTACT`, `RESPONE`, `STATUS`) VALUES
 (11, 'Nguyễn Mai Thảo', 'nmt_vn@yahoo.com', '', NULL, 0),
-(12, 'Nguyễn Mai Thảo', 'nmt_vn@yahoo.com', '<h1>mmmnn<b></b><i></i></h1>', NULL, 0);
+(12, 'Nguyễn Mai Thảo', 'thanhthanh1516@gmail.com', '<h1>mmmnn<b></b><i></i></h1>', 'respone', 1),
+(13, '43434', 'thanh101682@student.ctu.edu.vn', '43434', 'chó', 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `defines`
+-- Structure de la table `defines`
 --
 
 CREATE TABLE IF NOT EXISTS `defines` (
@@ -81,7 +105,7 @@ CREATE TABLE IF NOT EXISTS `defines` (
 ) ENGINE=MyISAM DEFAULT CHARSET=utf8 COLLATE=utf8_bin;
 
 --
--- Dumping data for table `defines`
+-- Contenu de la table `defines`
 --
 
 INSERT INTO `defines` (`DEFINE_NAME`, `DEFINE_VALUE`, `DEFINE_TYPE`) VALUES
@@ -104,7 +128,7 @@ INSERT INTO `defines` (`DEFINE_NAME`, `DEFINE_VALUE`, `DEFINE_TYPE`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `details_order`
+-- Structure de la table `details_order`
 --
 
 CREATE TABLE IF NOT EXISTS `details_order` (
@@ -115,10 +139,10 @@ CREATE TABLE IF NOT EXISTS `details_order` (
   PRIMARY KEY (`ID`),
   KEY `FK_HAVE_PRODUCTS` (`ID_ORDER`),
   KEY `FK_HAVE_BEEN_ORDERED` (`ID_PRO`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=41 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=47 ;
 
 --
--- Dumping data for table `details_order`
+-- Contenu de la table `details_order`
 --
 
 INSERT INTO `details_order` (`ID`, `ID_PRO`, `ID_ORDER`, `AMOUNT`) VALUES
@@ -129,12 +153,18 @@ INSERT INTO `details_order` (`ID`, `ID_PRO`, `ID_ORDER`, `AMOUNT`) VALUES
 (37, 44, 36, 7),
 (38, 44, 37, 5),
 (39, 45, 37, 5),
-(40, 42, 38, 2);
+(40, 42, 38, 2),
+(41, 51, 39, 1),
+(42, 51, 40, 1),
+(43, 50, 41, 1),
+(44, 51, 42, 15),
+(45, 50, 43, 3),
+(46, 51, 43, 1);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `details_promotion`
+-- Structure de la table `details_promotion`
 --
 
 CREATE TABLE IF NOT EXISTS `details_promotion` (
@@ -145,10 +175,10 @@ CREATE TABLE IF NOT EXISTS `details_promotion` (
   PRIMARY KEY (`ID`),
   KEY `FK_DETAILS_PROMOTIONS_PRODUCT` (`ID_PRO`),
   KEY `FK_PROMOTION_DETAILS` (`ID_PROMOTION`)
-) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=29 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=latin1 AUTO_INCREMENT=39 ;
 
 --
--- Dumping data for table `details_promotion`
+-- Contenu de la table `details_promotion`
 --
 
 INSERT INTO `details_promotion` (`ID`, `ID_PROMOTION`, `ID_PRO`, `PRICE_OFF`) VALUES
@@ -172,12 +202,22 @@ INSERT INTO `details_promotion` (`ID`, `ID_PROMOTION`, `ID_PRO`, `PRICE_OFF`) VA
 (25, 0, 52, 0.00),
 (26, 10, 50, 0.30),
 (27, 11, 50, 0.30),
-(28, 12, 50, 0.10);
+(28, 12, 50, 0.10),
+(29, 0, 51, 0.00),
+(30, 0, 53, 0.00),
+(31, 0, 52, 0.00),
+(32, 0, 55, 0.00),
+(33, 0, 55, 0.00),
+(34, 0, 55, 0.00),
+(35, 0, 55, 0.00),
+(36, 0, 55, 0.00),
+(37, 0, 55, 0.00),
+(38, 0, 55, 0.00);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `orders`
+-- Structure de la table `orders`
 --
 
 CREATE TABLE IF NOT EXISTS `orders` (
@@ -192,12 +232,24 @@ CREATE TABLE IF NOT EXISTS `orders` (
   PRIMARY KEY (`ID`),
   KEY `FK_HAVE_ORDERS` (`ID_ADMIN`),
   KEY `FK_PROCESS_ORDERS` (`ID_CUSTOMER`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=39 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=45 ;
+
+--
+-- Contenu de la table `orders`
+--
+
+INSERT INTO `orders` (`ID`, `ID_CUSTOMER`, `ID_ADMIN`, `TIME_ORDER`, `TIME_PROCESS`, `STATUS_ORDER`, `PRICE_SET`, `CURRENT_POINTS`) VALUES
+(39, 10, NULL, '2014-07-04 14:23:51', NULL, 0, 'USD', 0),
+(40, 10, NULL, '2014-07-04 16:06:57', NULL, 0, 'VND', 0),
+(41, 1, NULL, '2014-07-04 16:18:33', NULL, 0, 'VND', 0),
+(42, 10, NULL, '2014-07-06 21:05:14', NULL, 0, 'VND', 0),
+(43, 10, NULL, '2014-07-07 15:29:51', NULL, 0, 'VND', 0),
+(44, 10, NULL, '2014-07-07 15:30:06', NULL, 0, 'VND', 0);
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `product`
+-- Structure de la table `product`
 --
 
 CREATE TABLE IF NOT EXISTS `product` (
@@ -215,22 +267,22 @@ CREATE TABLE IF NOT EXISTS `product` (
   PRIMARY KEY (`ID`),
   KEY `FK_HAVE_CATEGORY` (`ID_CAT`),
   KEY `FK_HAVE_UNITS` (`ID_UNIT`)
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=55 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=56 ;
 
 --
--- Dumping data for table `product`
+-- Contenu de la table `product`
 --
 
 INSERT INTO `product` (`ID`, `ID_UNIT`, `ID_CAT`, `INFO_PRO`, `NAME_PRO`, `PRICE_USD`, `PRICE_VND`, `URL`, `THUMB`, `URL_PDF`, `SLIDE_SHOW`) VALUES
-(53, 13, 18, '<div><br></div><div><span>Modern and westernised lifestyle often brings forth the misconception that ginseng is a tonic for the older generation. In fact, ginseng is a supreme tonic that encompass numerous benefits that will enhance the health of both the young and the elderly. In countries such as Korea and China where diet plays a very important role in their daily lives, people start to appreciate and experience benefits of ginseng from young.&nbsp;<br><br>When do I need to take American Ginseng?<ul><li>Before intense mental work</li><li>Before and after exercise</li><li>Travelling</li><li>Lack of energy</li><li>Learning, examinations, feeling tense</li><li>Easy to get flu infection</li><li>Chest tightness, asthma, cough</li><li>Dryness in the mouth and constant thirst</li><li>Poor quality of sleep</li><li>Poor memory and concentration</li><li>Post surgery, post delivery, and recovering from an illness</li></ul>Why is AVALON™ American Ginseng Slice with Honey unique?&nbsp;<br><br>Modernize Traditional Usage of American Ginseng – Experience its goodness in a simple step by chewing. The benefits are optimized by immediate absorption via the capillaries in the mouth during the chewing process.<br><br>Enhanced with Linden Honey – Contains of anti-inflammatory properties, linden honey can soothe and relieve sore throat as well as nourish our lungs. When combined with premium American ginseng, the health benefits are doubled and it enhances our body\\\\\\''s immunity and overall well being.<br><br>Hygiene and Standardized Dosage – The product is ready-to-eat, vacuum-packed in sachets with standardized dosage of 5g per serving.&nbsp;</span></div>', 'AVALON™ American Ginseng Slice with Honey', 100.00, 300000.00, './public/products/imgs/pro_53.png', './public/products/imgs/thumb_pro_53.png', '', b'1'),
+(53, 13, 17, '<div><br></div><div><span>Modern and westernised lifestyle often brings forth the misconception that ginseng is a tonic for the older generation. In fact, ginseng is a supreme tonic that encompass numerous benefits that will enhance the health of both the young and the elderly. In countries such as Korea and China where diet plays a very important role in their daily lives, people start to appreciate and experience benefits of ginseng from young.&nbsp;<br><br>When do I need to take American Ginseng?<ul><li>Before intense mental work</li><li>Before and after exercise</li><li>Travelling</li><li>Lack of energy</li><li>Learning, examinations, feeling tense</li><li>Easy to get flu infection</li><li>Chest tightness, asthma, cough</li><li>Dryness in the mouth and constant thirst</li><li>Poor quality of sleep</li><li>Poor memory and concentration</li><li>Post surgery, post delivery, and recovering from an illness</li></ul>Why is AVALON™ American Ginseng Slice with Honey unique?&nbsp;<br><br>Modernize Traditional Usage of American Ginseng – Experience its goodness in a simple step by chewing. The benefits are optimized by immediate absorption via the capillaries in the mouth during the chewing process.<br><br>Enhanced with Linden Honey – Contains of anti-inflammatory properties, linden honey can soothe and relieve sore throat as well as nourish our lungs. When combined with premium American ginseng, the health benefits are doubled and it enhances our body\\\\\\\\\\\\\\''s immunity and overall well being.<br><br>Hygiene and Standardized Dosage – The product is ready-to-eat, vacuum-packed in sachets with standardized dosage of 5g per serving.&nbsp;</span></div>', 'AVALON™ American Ginseng Slice with Honey', 100.00, 300000.00, './public/products/imgs/pro_53.png', './public/products/imgs/thumb_pro_53.png', '', b'1'),
 (50, 2, 17, 'TASTES GREAT, LOOK GREAT!<br>Beauty is no longer the exclusive domain of women. Healthy and radiant skin is coveted by both sexes of this new age generation. <br>AVALON™ Japanese Fish Collagen uses the most premium ingredients, such as Japanese fish collagen of molecular weight of less than 3,000 Daltons and believed to be the best for absorption by the human body. In addition, it is the only collagen product in the market to be fortified with Probiotic complex – a combination of strains of beneficial bacteria. These work together to balance intestinal microflora and facilitate the rebuilding of healthy intestinal system to boost absorption of collagen peptides and L-Vitamin C, doubling the effectiveness of anti-aging and anti-oxidant properties, leaving us with radiant skin to reveal beauty from inside out.<br>Available in 3 refreshing flavours, AVALON™ makes consumption of collagen a pleasurable daily affair. Besides, every serving is individually packed for great convenience, catering to busy individuals who want to keep healthy glowing skin while they are on the go. With no added sugar, AVALON™ Japanese Fish Collagen is one great choice for diabetics as well as weight watchers. <br>It is never too early to start on collagen as the natural production of collagen in our body declines when we are 20 years old. Thus get your daily dose of AVALON™ Japanese Fish Collagen today to start enjoying the awesome benefits of it!', 'AVALON™ Japanese Fish Collagen', 100.00, 2000000.00, './public/products/imgs/pro_50.png', './public/products/imgs/thumb_pro_50.png', './public/products/pdf/pdf_pro_50.pdf', b'1'),
-(51, 2, 15, 'JustUme™, more than just a plum<br>Taking fruit such as plums will help cleanse our digestive tract. JustUme™ contains&nbsp;<br>the Japanese Umeboshi plums combined with 2 strains of probiotic and a special<br>blend of herbs to get rid of digestion problems. So take JustUme™ today and feel&nbsp;<br>cleaner, clearer and healthier.<br><br>Who is JustUme™ made for?<br>Fast paced modern working life tends to result in many modern day problems. Internal&nbsp;<br>problems such as constipation, excessive flatulence, bloating will lead to external&nbsp;<br>issues such as skin problems, weight gain and lethargy. These problems occur when&nbsp;<br>the pH of our body gets too acidic.<br><br>You need JustUme™ if you have these symptoms:<br><div><ul><li>Poor digestion</li><li>Water retention</li><li>Bloating &amp; flatulence</li><li>Fatigue, low energy</li><li>Prone to sickness</li><li>Poor and dull complexion</li><li>Excessive weight gain</li></ul></div>', 'JustUme™', 20.00, 300000.00, './public/products/imgs/pro_51.png', './public/products/imgs/thumb_pro_51.png', '', b'1'),
-(52, 8, 16, 'AVALON™ Fat Burner Plus is an improved formula of AVALON™ Fat Burner. It is an all-natural healthy slimming formula which contains green tea extract, curcumin extract, piperine extract, probiotics complex and water soluble dietary fiber. AVALON™ Fat Burner Plus does not contain diuretic, laxative, appetite suppressant, ephedrine and caffeine, thus will not induce dehydration, diarrhea, anorexia and heart palpitation.<br><br>The highly potent and safe ingredients of AVALON™ Fat Burner Plus produce powerful synergistic effect to make the product stronger and effective than regular fat burner formula with no adverse effects. AVALON™ Fat Burner Plus only burns fats and does not cause loss of body fluid thus after weight loss is achieved, skin complexion remain toned and no weight bounce will be experienced.Functions of AVALON™ Fat Burner Plus:<ul><li>Burn excess body fat</li><li>Increase metabolism</li><li>Prevent fat absorption</li><li>Prevent carbohydrates from turning into fats</li><li>Help maintain healthy cholesterol and blood sugar level</li><li>Support liver, kidney and joint health</li></ul>', 'AVALON™ Fat Burner Plus', 150.00, 300000.00, './public/products/imgs/pro_52.png', './public/products/imgs/thumb_pro_52.png', '', b'1');
+(51, 2, 17, 'JustUme™, more than just a plum<br>Taking fruit such as plums will help cleanse our digestive tract. JustUme™ contains&nbsp;<br>the Japanese Umeboshi plums combined with 2 strains of probiotic and a special<br>blend of herbs to get rid of digestion problems. So take JustUme™ today and feel&nbsp;<br>cleaner, clearer and healthier.<br><br>Who is JustUme™ made for?<br>Fast paced modern working life tends to result in many modern day problems. Internal&nbsp;<br>problems such as constipation, excessive flatulence, bloating will lead to external&nbsp;<br>issues such as skin problems, weight gain and lethargy. These problems occur when&nbsp;<br>the pH of our body gets too acidic.<br><br>You need JustUme™ if you have these symptoms:<br><div><ul><li>Poor digestion</li><li>Water retention</li><li>Bloating &amp; flatulence</li><li>Fatigue, low energy</li><li>Prone to sickness</li><li>Poor and dull complexion</li><li>Excessive weight gain</li></ul></div>', 'JustUme™', 20.00, 300000.00, './public/products/imgs/pro_51.png', './public/products/imgs/thumb_pro_51.png', '', b'1'),
+(52, 8, 17, 'AVALON™ Fat Burner Plus is an improved formula of AVALON™ Fat Burner. It is an all-natural healthy slimming formula which contains green tea extract, curcumin extract, piperine extract, probiotics complex and water soluble dietary fiber. AVALON™ Fat Burner Plus does not contain diuretic, laxative, appetite suppressant, ephedrine and caffeine, thus will not induce dehydration, diarrhea, anorexia and heart palpitation.<br><br>The highly potent and safe ingredients of AVALON™ Fat Burner Plus produce powerful synergistic effect to make the product stronger and effective than regular fat burner formula with no adverse effects. AVALON™ Fat Burner Plus only burns fats and does not cause loss of body fluid thus after weight loss is achieved, skin complexion remain toned and no weight bounce will be experienced.Functions of AVALON™ Fat Burner Plus:<ul><li>Burn excess body fat</li><li>Increase metabolism</li><li>Prevent fat absorption</li><li>Prevent carbohydrates from turning into fats</li><li>Help maintain healthy cholesterol and blood sugar level</li><li>Support liver, kidney and joint health</li></ul>', 'AVALON™ Fat Burner Plus', 150.00, 300000.00, './public/products/imgs/pro_52.png', './public/products/imgs/thumb_pro_52.png', '', b'1');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `promotions`
+-- Structure de la table `promotions`
 --
 
 CREATE TABLE IF NOT EXISTS `promotions` (
@@ -243,16 +295,16 @@ CREATE TABLE IF NOT EXISTS `promotions` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `promotions`
+-- Contenu de la table `promotions`
 --
 
 INSERT INTO `promotions` (`ID`, `NAME_PROMOTION`, `CONTENT_PROMOTION`, `TIME_START`, `TIME_END`) VALUES
-(12, 'Khuyến mãi mùa hè', '<b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><h6><b>Chương trình khuyến mãi abc</b></h6><h5><b>Chương trình khuyến mãi abc</b></h5><b><u><i>Chương trình khuyến mãi abc</i></u></b><b><br></b>', '2014-07-02', '2014-07-03');
+(12, 'Khuyến mãi mùa hè', '<b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><b>Chương trình khuyến mãi abc<br></b><h6><b>Chương trình khuyến mãi abc</b></h6><h5><b>Chương trình khuyến mãi abc</b></h5><b><u><i>Chương trình khuyến mãi abc</i></u></b><b><br></b>', '2014-07-02', '2014-07-05');
 
 -- --------------------------------------------------------
 
 --
--- Table structure for table `unit`
+-- Structure de la table `unit`
 --
 
 CREATE TABLE IF NOT EXISTS `unit` (
@@ -263,7 +315,7 @@ CREATE TABLE IF NOT EXISTS `unit` (
 ) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=14 ;
 
 --
--- Dumping data for table `unit`
+-- Contenu de la table `unit`
 --
 
 INSERT INTO `unit` (`ID`, `UNIT_NAME`) VALUES
@@ -277,7 +329,7 @@ INSERT INTO `unit` (`ID`, `UNIT_NAME`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Structure de la table `user`
 --
 
 CREATE TABLE IF NOT EXISTS `user` (
@@ -298,17 +350,18 @@ CREATE TABLE IF NOT EXISTS `user` (
   PRIMARY KEY (`ID`),
   UNIQUE KEY `USER_USERNAME_UNIQUE` (`USERNAME`),
   UNIQUE KEY `USER_EMAIL_UNIQUE` (`EMAIL`) USING BTREE
-) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=12 ;
+) ENGINE=MyISAM  DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=13 ;
 
 --
--- Dumping data for table `user`
+-- Contenu de la table `user`
 --
 
 INSERT INTO `user` (`ID`, `USERNAME`, `PASSWORD`, `NAME`, `BIRTH`, `ADDRESS`, `STREET`, `DISTRICT`, `PROVINCE`, `NUMBERPHONE`, `EMAIL`, `ROLE`, `POINT`, `STATUS`) VALUES
 (1, 'admin', '202cb962ac59075b964b07152d234b70', 'Lê thanh tùng', '1992-01-28', 'home', 'home', 'homep', 'Cần Thơ', '01259201059', 'thanhthanh1516@gmail.com', 1, 18, 1),
 (3, 'user1', '202cb962ac59075b964b07152d234b70', 'Nguyễn Mai Thảo', '1990-06-17', '138', 'Nguyễn Văn Cừ', 'Ninh Kiều', 'TP Cần Thơ', '0918726003', 'nmt_vn@yahoo.com', 0, 229, 1),
-(10, 'user', '35705de1978a792d689f6725d5926225', 'Ngô Giang Thanh', '1992-08-25', '132/28, Hưng Lợi, Ninh Kiều, Cần Thơ', '3/2', 'Ninh Kiều', 'Cần Thơ', '0946344233', 'thanh101682@student.ctu.vn', 0, 0, 1),
-(11, '123', 'c4ca4238a0b923820dcc509a6f75849b', '3', '2014-07-04', '1', '2', '3', '4', '3333333333333', 'thanh101682@student.ctu.edu.vn', 0, 0, 1);
+(10, 'user', '202cb962ac59075b964b07152d234b70', 'Ngô Giang Thanh', '1992-08-25', '132/28, Hưng Lợi, Ninh Kiều, Cần Thơ', '3/2', 'Ninh Kiều', 'Cần Thơ', '0946344123', 'thanh101683@student.ctu.edu.vn', 0, 0, 1),
+(11, '123', 'c4ca4238a0b923820dcc509a6f75849b', '3', '2014-07-04', '1', '2', '3', '4', '3333333333333', 'thanh101682@student.ctu.edu.vn', 0, 0, 1),
+(12, 'user2', '202cb962ac59075b964b07152d234b70', '2', '2014-07-04', '2', '2', '2', '2', '1234567890', 'thanh1thanh1516@gmail.com', 0, 0, 1);
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
