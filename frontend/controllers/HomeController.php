@@ -6,6 +6,7 @@
  * @modified 05/07/2014
  */
 include_once './frontend/controllers/ValidationController.php';
+include_once './frontend/controllers/BranchesController.php';
 include_once './frontend/models/user.php';
 include_once './frontend/models/category.php';
 
@@ -16,6 +17,7 @@ include_once './frontend/models/category.php';
  */
 function GetIndex($title = WEBSITENAME) {
     $slideimages = ProductSelectSlideShow(); //banner
+    $branches = GetBranches(); //wheretobuy
     $category = CategorySelect(); //category ở trang product
     $promotions = GetCurrentPromotions(); //promotion ở trang promotion
     $countCart = (isset($_SESSION['cart'])) ? count($_SESSION['cart']) : 0;
