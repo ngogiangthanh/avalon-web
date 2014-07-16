@@ -62,11 +62,7 @@
                     <!-- Where to buy Start -->
                     <div class="testimonial">
                         <?php
-                        if (isset($_SESSION['language']) && $_SESSION['language'] == 'english') {
-                            include_once './frontend/views/us/wheretobuy_en.php';
-                        } else {
-                            include_once './frontend/views/us/wheretobuy_vn.php';
-                        }
+                            include_once './frontend/views/us/wheretobuy.php';
                         ?>
                         <div class="clearfix"></div>
                     </div>

@@ -19,6 +19,13 @@
 </div>
 <!-- Navigation menu list -->
 <ul class="list-unstyled list" role="menu" aria-labelledby="dropdownMenu" >
+    <?php
+    if (!isset($_SESSION['login'])) {
+        ?>
+        <li id="menu_id"><a href="#" class="anchorLink " data-toggle="modal" data-target="#basicModal"><i class="icon-user scolor"></i>&nbsp;<?= MEMBER ?></a></li>
+        <?php
+    } 
+    ?>
     <li id="inforuser" class="accordion-group">
         <?php
         if (isset($_SESSION['login'])) {
@@ -71,7 +78,6 @@
     <?php
     if (!isset($_SESSION['login'])) {
         ?>
-        <li id="menu_id"><a href="#" class="anchorLink " data-toggle="modal" data-target="#basicModal"><i class="icon-user scolor"></i>&nbsp;<?= MEMBER ?></a></li>
         <li><a href="#" class="anchorLink"  data-toggle="modal" data-target="#contactDialogID" id="contactUsIDLink"><i class="icon-phone scolor"></i>&nbsp;<?= CONTACT_US ?></a></li>
         <?php
     } else if (isset($_SESSION['login'][11]) && $_SESSION['login'][11] != 1) {
