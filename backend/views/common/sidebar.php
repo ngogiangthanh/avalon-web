@@ -14,5 +14,7 @@
         <a href="admin.php?controller=order" class="list-group-item"><i class="glyphicon glyphicon-usd"></i>&nbsp;<?= SIDEBAR_ORDERS_MENU ?></a>
         <a href="admin.php?controller=user" class="list-group-item"><i class="glyphicon glyphicon-user"></i>&nbsp;<?= SIDEBAR_CUMSTOMERS_MENU ?></a>
         <a href="admin.php?controller=contact" class="list-group-item"><i class="glyphicon glyphicon-pencil"></i>&nbsp;<?= SIDEBAR_CONTACTS_MENU ?></a>
+        <a href="admin.php?controller=logo" class="list-group-item"><i class="glyphicon glyphicon-bell"></i>&nbsp;<?= SIDEBAR_LOGO_MENU ?></a>
+        <a href="admin.php?controller=wheretobuy" class="list-group-item"><i class="glyphicon glyphicon-road"></i>&nbsp;<?= SIDEBAR_BRANCHES_MENU?></a>
     </div>
 </div>

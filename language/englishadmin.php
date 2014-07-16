@@ -22,7 +22,9 @@ define("SIDEBAR_PRODUCTS_MENU", "Products list");
 define("SIDEBAR_PROMOTIONS_MENU", "Promotions list");
 define("SIDEBAR_ORDERS_MENU", "Orders list");
 define("SIDEBAR_CUMSTOMERS_MENU", "Customers list");
-define("SIDEBAR_CONTACTS_MENU", "Contacts"); // 
+define("SIDEBAR_CONTACTS_MENU", "Contacts");
+define("SIDEBAR_LOGO_MENU", "Logo of company");
+define("SIDEBAR_BRANCHES_MENU", "Where to buy");
 //Home page ====================================================================
 define("HOME_TILTE", "Administrator page");
 define("HOME_MENU_MAIN_PAGE_MENU", "Home customer");
@@ -33,6 +35,8 @@ define("HOME_MENU_PROMOTIONS_MENU", "Promotions list");
 define("HOME_MENU_ORDERS_MENU", "Orders list");
 define("HOME_MENU_CUMSTOMERS_MENU", "Customers list");
 define("HOME_MENU_CONTACTS_MENU", "Contacts");
+define("HOME_MENU_LOGO_MENU", "Logo of company");
+define("HOME_MENU_BRANCHES_MENU", "Where to buy");
 //Profile page =================================================================
 define("PROFILE_ADMIN_TITLE", "My profile");
 define("PROFILE_ADMIN_USERNAME", "Username");
@@ -310,6 +314,40 @@ define("ORDER_PRINT_DAY", "Day");
 define("ORDER_PRINT_MONTH", "month");
 define("ORDER_PRINT_YEAR", "year");
 define("ORDER_PRINT_INFO_SIGN", "(sign and write fullname)");
+// Logo ========================================================================
+define("LOGO_TITLE_INDEX", "Logo change");
+// Edit ========================================================================
+define("LOGO_ALERT_UPDATE_SUCCESS", "Change logo successfully!");
+define("LOGO_ALERT_UPDATE_FAILED", "Change logo failed!");
+define("LOGO_UPDATE_TITLE", "Logo");
+define("LOGO_UPDATE_CHOOSE_LOGO", "Choose logo");
+define("LOGO_UPDATE_FORMAT_LOGO", "Image of logo with format *.png");
+define("LOGO_UPDATE_CURRENT_LOGO", "Current logo");
+define("LOGO_UPDATE_BUTTON_SAVE", "Save");
+// Branch ======================================================================
+define("BRANCH_TITLE_INDEX", "Branches management");
+define("BRANCH_UPDATE_TITLE_INDEX", "Update branch");
+define("BRANCH_ADD_TITLE_INDEX", "Add new branch");
+// Table =======================================================================
+define("BRANCH_TABLE_SEARCH", "Search branch with name");
+define("BRANCH_TABLE_ADD", "Add new branch");
+define("BRANCH_TABLE_ID", "ID");
+define("BRANCH_TABLE_NAME", "Name branch");
+define("BRANCH_TABLE_TASKS", "Tasks");
+define("BRANCH_TABLE_CONFIRM_DELETE", "Do you want to delete this branch?");
+define("BRANCH_TABLE_ALERT_DELETE_SUCCESS", "Delete branch successfully!");
+define("BRANCH_TABLE_ALERT_DELETE_FAILED", "Delete branch failed!");
+// Edit ========================================================================
+define("BRANCH_EDIT_ALERT_UPDATE_SUCCESS", "Update branch successfully!");
+define("BRANCH_EDIT_ALERT_UPDATE_FAILED", "Update branch failed!");
+define("BRANCH_FORM_TITLE", "Update branch");
+define("BRANCH_FORM_NAME", "Name of branch");
+define("BRANCH_FORM_NAME_PLACEHOLDER", "Enter name of branch");
+define("BRANCH_FORM_DESCRIPTE", "Info of branch");
+define("BRANCH_FORM_DESCRIPTE_PLACEHOLDER", "Enter info of branch");
+define("BRANCH_FORM_BUTTON_SUBMIT_EDIT", "Save");
+define("BRANCH_FORM_BUTTON_SUBMIT_ADD", "Add new");
+define("BRANCH_FORM_BUTTON_BACK", "Back");
 // Level =======================================================================
 define("ORDER_STATUS_SUCCESS", "Success");
 define("ORDER_STATUS_DESTROY", "Cancel");
