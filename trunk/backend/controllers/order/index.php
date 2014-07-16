@@ -30,7 +30,7 @@ if (isset($_GET['search'])) {
     $url = 'admin.php?controller=order&search=' . $_GET['search'];
 }
 
-$total_rows = get_order_total('orders', $options);
+$total_rows = get_order_total($options);
 $total = ceil($total_rows / $limit);
 
 //data
