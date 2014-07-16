@@ -5,7 +5,7 @@
  * 
  */
 
-define('WEBSITENAME', 'Shop Của Tôi');
+define('WEBSITENAME', 'Shop Cá Voi Xanh');
 define('ADMINISTRATOR', 'Quản lý');
 define('ENGLISH', 'English');
 define('VIETNAMESE', 'Tiếng Việt');
