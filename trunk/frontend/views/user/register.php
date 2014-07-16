@@ -303,6 +303,7 @@
                         $("#fullname").val('');
                         $("#birth").val('');
                         $("#numberphone").val('');
+                        $("#basicModal").modal("show");
                         $("#registerID").modal("hide");
                     }
                     else if (data === "conflictuser") {
