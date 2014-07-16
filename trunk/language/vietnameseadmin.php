@@ -23,6 +23,8 @@ define("SIDEBAR_PROMOTIONS_MENU", "Các đợt khuyến mãi");
 define("SIDEBAR_ORDERS_MENU", "Các đơn đặt hàng");
 define("SIDEBAR_CUMSTOMERS_MENU", "Danh sách khách hàng");
 define("SIDEBAR_CONTACTS_MENU", "Các liên hệ");
+define("SIDEBAR_LOGO_MENU", "Biểu tượng cty");
+define("SIDEBAR_BRANCHES_MENU", "Mua ở đâu");
 //Home page ====================================================================
 define("HOME_TILTE", "Trang chủ quản lý");
 define("HOME_MENU_MAIN_PAGE_MENU", "Trang chủ khách hàng");
@@ -33,6 +35,8 @@ define("HOME_MENU_PROMOTIONS_MENU", "Các đợt khuyến mãi");
 define("HOME_MENU_ORDERS_MENU", "Các đơn đặt hàng");
 define("HOME_MENU_CUMSTOMERS_MENU", "Danh sách khách hàng");
 define("HOME_MENU_CONTACTS_MENU", "Các liên hệ");
+define("HOME_MENU_LOGO_MENU", "Biểu tượng cty");
+define("HOME_MENU_BRANCHES_MENU", "Mua ở đâu");
 //Profile page =================================================================
 define("PROFILE_ADMIN_TITLE", "Hồ sơ của tôi");
 define("PROFILE_ADMIN_USERNAME", "Tài khoản");
@@ -310,6 +314,40 @@ define("ORDER_PRINT_DAY", "ngày");
 define("ORDER_PRINT_MONTH", "tháng");
 define("ORDER_PRINT_YEAR", "năm");
 define("ORDER_PRINT_INFO_SIGN", "(Ký và ghi rõ họ tên)");
+// Logo ========================================================================
+define("LOGO_TITLE_INDEX", "Thay đổi logo");
+// Edit ========================================================================
+define("LOGO_ALERT_UPDATE_SUCCESS", "Thay đổi logo thành công!");
+define("LOGO_ALERT_UPDATE_FAILED", "Thay đổi logo thất bại!");
+define("LOGO_UPDATE_TITLE", "Logo");
+define("LOGO_UPDATE_CHOOSE_LOGO", "Chọn hình ảnh logo");
+define("LOGO_UPDATE_FORMAT_LOGO", "Định dạng hình ảnh logo *.png");
+define("LOGO_UPDATE_CURRENT_LOGO", "Logo hiện tại");
+define("LOGO_UPDATE_BUTTON_SAVE", "Lưu");
+// Branch ======================================================================
+define("BRANCH_TITLE_INDEX", "Quản lý chi nhánh");
+define("BRANCH_UPDATE_TITLE_INDEX", "Sửa chi nhánh");
+define("BRANCH_ADD_TITLE_INDEX", "Thêm chi nhánh");
+// Table =======================================================================
+define("BRANCH_TABLE_SEARCH", "Tìm kiếm chi nhánh theo tên");
+define("BRANCH_TABLE_ADD", "Thêm mới chi nhánh");
+define("BRANCH_TABLE_ID", "ID");
+define("BRANCH_TABLE_NAME", "Tên chi nhánh");
+define("BRANCH_TABLE_TASKS", "Các tác vụ");
+define("BRANCH_TABLE_CONFIRM_DELETE", "Xác nhận xóa chi nhánh này?");
+define("BRANCH_TABLE_ALERT_DELETE_SUCCESS", "Xóa chi nhánh thành công!");
+define("BRANCH_TABLE_ALERT_DELETE_FAILED", "Xóa chi nhánh thất bại!");
+// Edit ========================================================================
+define("BRANCH_EDIT_ALERT_UPDATE_SUCCESS", "Cập nhật chi nhánh thành công!");
+define("BRANCH_EDIT_ALERT_UPDATE_FAILED", "Cập nhật chi nhánh thất bại!");
+define("BRANCH_FORM_TITLE", "Cập nhật chi nhánh");
+define("BRANCH_FORM_NAME", "Tên chi nhánh");
+define("BRANCH_FORM_NAME_PLACEHOLDER", "Nhập tên chi nhánh");
+define("BRANCH_FORM_DESCRIPTE", "Thông tin chi nhánh");
+define("BRANCH_FORM_DESCRIPTE_PLACEHOLDER", "Nhập thông tin chi nhánh");
+define("BRANCH_FORM_BUTTON_SUBMIT_EDIT", "Sửa đổi");
+define("BRANCH_FORM_BUTTON_SUBMIT_ADD", "Thêm mới");
+define("BRANCH_FORM_BUTTON_BACK", "Quay lại");
 // Level =======================================================================
 define("ORDER_STATUS_SUCCESS", "Hoàn thành");
 define("ORDER_STATUS_DESTROY", "Hủy bỏ");

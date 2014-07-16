@@ -23,4 +23,10 @@
     <a href="admin.php?controller=contact" class="col-6 col-sm-4 col-lg-3">
         <i class="glyphicon glyphicon-pencil"></i>&nbsp;<?= HOME_MENU_CONTACTS_MENU ?>
     </a>
+    <a href="admin.php?controller=logo" class="col-6 col-sm-4 col-lg-3">
+        <i class="glyphicon glyphicon-bell"></i>&nbsp;<?= HOME_MENU_LOGO_MENU ?>
+    </a>
+    <a href="admin.php?controller=wheretobuy" class="col-6 col-sm-4 col-lg-3">
+        <i class="glyphicon glyphicon-road"></i>&nbsp;<?= HOME_MENU_BRANCHES_MENU ?>
+    </a>
 </div>
