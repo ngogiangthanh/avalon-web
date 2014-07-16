@@ -101,7 +101,7 @@ define("CUSTOMER_TYPE_BROZONE", "Bronze");
 define("CUSTOMER_TYPE_NEWBIE", "New member");
 // Contact =====================================================================
 define("CONTACT_TITLE_INDEX", "Contact of customer");
-define("CONTACT_TITLE_RESPONE", "Respone to customer");
+define("CONTACT_TITLE_RESPONE", "Reponse to customer");
 // Table =======================================================================
 define("CONTACT_TABLE_SEARCH", "Search with name");
 define("CONTACT_TABLE_ID", "ID");
@@ -114,20 +114,20 @@ define("CONTACT_TABLE_CONFIRM_DELETE", "Do you want to delete this contact?");
 define("CONTACT_TABLE_ALERT_DELETE_SUCCESS", "Delete contact successful!");
 define("CONTACT_TABLE_ALERT_DELETE_FAILED", "Delete contact failed!");
 // Respone =====================================================================
-define("CONTACT_RESPONE_TITLE", "Respone customer");
+define("CONTACT_RESPONE_TITLE", "Reponse customer");
 define("CONTACT_RESPONE_TOPIC", "Topic");
-define("CONTACT_RESPONE_TOPIC_CONTENT", "[Blue Dolphin EXIM Co. LTD] Respone from administrator");
+define("CONTACT_RESPONE_TOPIC_CONTENT", "[Blue Dolphin EXIM Co. LTD] Reponse from administrator");
 define("CONTACT_RESPONE_EMAIL", "To email");
 define("CONTACT_RESPONE_EMAIL_PLACEHOLDER", "Enter email of customer");
 define("CONTACT_RESPONE_CONTENT_OF_CONTACT", "Content of contact");
-define("CONTACT_RESPONE_CONTENT_OF_RESPONE", "Content of respone");
-define("CONTACT_RESPONE_CONTENT_OF_RESPONE_PLACEHOLDER", "Enter content of respone");
+define("CONTACT_RESPONE_CONTENT_OF_RESPONE", "Content of reponse");
+define("CONTACT_RESPONE_CONTENT_OF_RESPONE_PLACEHOLDER", "Enter content of reponse");
 define("CONTACT_RESPONE_BUTTON_SEND", "Send");
 define("CONTACT_RESPONE_BUTTON_BACK", "Back");
-define("CONTACT_RESPONE_ALERT_SEND_SUCCESS", "Send respone successful!");
-define("CONTACT_RESPONE_ALERT_SEND_FAILED", "Send respone failed!");
+define("CONTACT_RESPONE_ALERT_SEND_SUCCESS", "Send reponse successful!");
+define("CONTACT_RESPONE_ALERT_SEND_FAILED", "Send reponse failed!");
 // Status respone ==============================================================
-define("CONTACT_STATUS_RESPONE", "Responed");
+define("CONTACT_STATUS_RESPONE", "Reponsed");
 define("CONTACT_STATUS_WAIT", "Wait");
 // Category ====================================================================
 define("CATEGORY_TITLE_INDEX", "Categories list");
