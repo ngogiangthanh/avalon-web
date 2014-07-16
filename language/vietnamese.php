@@ -80,11 +80,11 @@ define('REGISTER_NAME', 'Tên: ');
 define('REGISTER_DATE', 'Ngày Sinh: ');
 define('REGISTER_POINT', 'Điểm: ');
 
-define('REGISTER_NEXT', 'tới: ');
-define('REGISTER_LAST', 'cuối cùng: ');
-define('REGISTER_FIRST', 'đầu tiên: ');
-define('REGISTER_PREVIOUS', 'quay lại: ');
-define('REGISTER_FINISH', 'hoàn thành: ');
+define('REGISTER_NEXT', 'tới');
+define('REGISTER_LAST', 'cuối cùng');
+define('REGISTER_FIRST', 'đầu tiên');
+define('REGISTER_PREVIOUS', 'quay lại');
+define('REGISTER_FINISH', 'hoàn thành');
 
 //===============================================================================
 //profile

@@ -78,11 +78,11 @@ define('REGISTER_NAME', 'Name: ');
 define('REGISTER_DATE', 'Date: ');
 define('REGISTER_POINT', 'Point: ');
 
-define('REGISTER_NEXT', 'Next: ');
-define('REGISTER_LAST', 'Last: ');
-define('REGISTER_FIRST', 'First: ');
-define('REGISTER_PREVIOUS', 'Previous: ');
-define('REGISTER_FINISH', 'Finish: ');
+define('REGISTER_NEXT', 'Next');
+define('REGISTER_LAST', 'Last');
+define('REGISTER_FIRST', 'First');
+define('REGISTER_PREVIOUS', 'Previous');
+define('REGISTER_FINISH', 'Finish');
 
 
 //===============================================================================
