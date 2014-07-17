@@ -65,7 +65,7 @@ if (!empty($_POST)) {
         }
     }
     //cập nhật chương trình khuyến mãi
-    if ($_POST['id_promotion'] != "choose") {
+    if (isset( $_POST['id_promotion']) && $_POST['id_promotion'] != "choose") {
         save('details_promotion', array(
             'id' => intval($_POST['id_current_promotion']),
             'id_promotion' => intval($_POST['id_promotion']),
