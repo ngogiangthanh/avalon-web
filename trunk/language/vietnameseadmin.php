@@ -116,7 +116,7 @@ define("CONTACT_TABLE_ALERT_DELETE_FAILED", "Xóa liên hệ thất bại!");
 // Respone =====================================================================
 define("CONTACT_RESPONE_TITLE", "Phản hồi liên hệ của khách hàng");
 define("CONTACT_RESPONE_TOPIC", "Chủ đề");
-define("CONTACT_RESPONE_TOPIC_CONTENT", "[Avalon Website] Phản hồi từ quản lý");
+define("CONTACT_RESPONE_TOPIC_CONTENT", "[Cty TNHH XNK Cá Heo Xanh] Phản hồi liên hệ của bạn");
 define("CONTACT_RESPONE_EMAIL", "Đến email");
 define("CONTACT_RESPONE_EMAIL_PLACEHOLDER", "Nhập vào địa chỉ email gửi đến");
 define("CONTACT_RESPONE_CONTENT_OF_CONTACT", "Nội dung liên hệ");
@@ -200,9 +200,9 @@ define("PRODUCT_EDIT_CONTENT_PLACEHOLDER", "Nhập mô tả sản phẩm");
 define("PRODUCT_EDIT_PRICE_VND", "Giá VND");
 define("PRODUCT_EDIT_PRICE_USD", "Giá USD");
 define("PRODUCT_EDIT_IMAGE", "Hình ảnh");
-define("PRODUCT_EDIT_PDF", "PDF");
-define("PRODUCT_EDIT_PDF_TIPS", "Kích thước PDF <= 2MB");
-define("PRODUCT_EDIT_PDF_DOWNLOAD", "Tải về");
+define("PRODUCT_EDIT_PDF", "Brochure");
+define("PRODUCT_EDIT_PDF_TIPS", "Kích thước Brochure <= 20MB");
+define("PRODUCT_EDIT_PDF_DOWNLOAD", "Tải về Brochure");
 define("PRODUCT_EDIT_PROMOTION", "Khuyến mãi");
 define("PRODUCT_EDIT_PROMOTION_DEFAULT", "-----Chọn chương trình khuyến mãi-----");
 define("PRODUCT_EDIT_PRICE_OFF", "Tỉ lệ giảm");
@@ -213,8 +213,8 @@ define("PRODUCT_EDIT_ALERT_UPDATE_SUCCESS", "Cập nhật thông tin sản phẩ
 define("PRODUCT_EDIT_ALERT_UPDATE_FAILED", "Cập nhật thông tin sản phẩm thất bại!");
 define("PRODUCT_EDIT_ALERT_UPDATE_IMAGE_SUCCESS", "Cập nhật thông tin hình ảnh thành công!");
 define("PRODUCT_EDIT_ALERT_UPDATE_IMAGE_FAILED", "Cập nhật thông tin hình ảnh thất bại!");
-define("PRODUCT_EDIT_ALERT_UPDATE_PDF_SUCCESS", "Cập nhật thông tin PDF thành công!");
-define("PRODUCT_EDIT_ALERT_UPDATE_PDF_FAILED", "Cập nhật thông tin PDF thất bại!");
+define("PRODUCT_EDIT_ALERT_UPDATE_PDF_SUCCESS", "Cập nhật thông tin Brochure thành công!");
+define("PRODUCT_EDIT_ALERT_UPDATE_PDF_FAILED", "Cập nhật thông tin Brochure thất bại!");
 // Promotion ===================================================================
 define("PROMOTION_TITLE_INDEX", "Danh sách khuyến mãi");
 define("PROMOTION_TITLE_ADD", "Thêm khuyến mãi");
@@ -303,8 +303,8 @@ define("ORDER_VIEW_BUTTON_BACK", "Quay lại");
 define("ORDER_VIEW_UPDATE_ORDER_SUCCESS", "Cập nhật đơn đặt hàng thành công!");
 define("ORDER_VIEW_UPDATE_ORDER_FAILED", "Cập nhật đơn đặt hàng thất bại!");
 // Print =======================================================================
-define("ORDER_PRINT_AVALON_WEBSITE", "Avalon Website");
-define("ORDER_PRINT_AVALON_NAME", "Tên công ty");
+define("ORDER_PRINT_AVALON_WEBSITE", "Cty TNHH XNK Cá Heo Xanh");
+define("ORDER_PRINT_AVALON_NAME", "Nhân viên ");
 define("ORDER_PRINT_AVALON_ADDRESS", "Địa chỉ");
 define("ORDER_PRINT_AVALON_PHONE", "Điện thoại");
 define("ORDER_PRINT_AVALON_EMAIL", "Email");

@@ -1,4 +1,4 @@
-
+                                
 <?php
     require_once 'PHPMailerAutoload.php';
 
@@ -18,15 +18,15 @@
         }
         $mail->isSMTP();
         $mail->SMTPDebug = 2;
-        $mail->Host = "ssl://smtp.gmail.com";
+        $mail->Host = "ssl://ns89104.dotvndns.vn";
         $mail->Port = "465";
         $mail->SMTPSecure = "none";
         $mail->SMTPAuth = true;
-        $mail->Username = "avalonvietnam@gmail.com";
-        $mail->Password = "avalon1234";
+        $mail->Username = "bluedolp";
+        $mail->Password = "Blue2014";
         $mail->addReplyTo($_POST['email'], $_POST['email']);
-        $mail->From = "avalonvietnam@gmail.com";
-        $mail->FromName = "Avalon";
+        $mail->From = "inquiry@bluedolphin.com.vn";
+        $mail->FromName = "Blue Dolphin's Customer Service";
         $mail->addAddress($_POST['email'], $_POST['email']);
         $mail->Subject = $_POST['title'];
         $body = $_POST['respone'];
@@ -54,6 +54,7 @@
 
         try {
             $mail->send();
+            echo "<script>location.href='admin.php?controller=contact&action=respone&cid=".$id."&statusupdate=true'</script>";
             $results_messages[] = "Message has been sent using SMTP";
         } catch (phpmailerException $e) {
          //   throw new phpmailerAppException('Unable to send to: ' . $to . ': ' . $e->getMessage());
@@ -71,3 +72,4 @@
 //        echo "</ul>\n";
 //    }
 ?>
+                            

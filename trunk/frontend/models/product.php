@@ -51,7 +51,7 @@ function ProductSelect($offset, $items, $categoryID) {
     //Chuyển đổi dữ liệu từ cấu trúc của result từ quert mysql về cấu trúc dạng danh sách mảng của php
     $products = array();
     if (mysql_num_rows($result) > 0) {
-        while ($row = mysql_fetch_assoc($result)) {
+        while ($row = mysql_fetch_array($result)) {
             $sql = "SELECT promotions.NAME_PROMOTION,
                                     details_promotion.PRICE_OFF
                                     FROM
@@ -59,7 +59,7 @@ function ProductSelect($offset, $items, $categoryID) {
                                     INNER JOIN details_promotion ON details_promotion.ID_PROMOTION = promotions.ID
                                     WHERE
                                     current_date() BETWEEN promotions.TIME_START AND  promotions.TIME_END AND 
-                                    details_promotion.ID_PRO=" . $row['ID'];
+                                    details_promotion.ID_PRO=" . $row[0];
             $resultpromotion = mysql_query($sql);
             $promotion = array("NAME_PROMOTION" => "", "PRICE_OFF" => "0");
             if (mysql_num_rows($resultpromotion) > 0) {

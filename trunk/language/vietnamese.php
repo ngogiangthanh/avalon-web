@@ -5,17 +5,18 @@
  * 
  */
 
-define('WEBSITENAME', 'Shop Cá Voi Xanh');
+define('WEBSITENAME', 'Cty TNHH MTV XNK Cá Heo Xanh');
 define('ADMINISTRATOR', 'Quản lý');
-define('ENGLISH', 'English');
-define('VIETNAMESE', 'Tiếng Việt');
+define('LANG','?lang=english');
+define('LABEL', 'English');
+define('FLAG','./public/img/usflag.png');
 //
-define('ALERT_INDEX', 'Chao mung toi website cua chung toi! Vui long <a>dang nhap</a> de thuc hien chuc nang dat hang');
+define('ALERT_INDEX', 'Chào mừng bạn đến với Cá Heo Xanh, hãy đăng ký làm thành viên để được tham gia chương trình khuyến mãi!');
 //menu
 define('ABOUT_US', 'Giới Thiệu');
 define('OUR_PRODUCTS', 'Sản Phẩm');
 define('PROMOTIONS', 'Khuyến Mãi');
-define('WHERE_TO_BUY', 'Mua Ở Đâu ?');
+define('WHERE_TO_BUY', 'Mua Ở Đâu');
 define('MEMBER', 'Thành Viên');
 define('CONTACT_US', 'Liên Hệ');
 define('LANGUAGE', 'Ngôn Ngữ');
@@ -34,16 +35,16 @@ define('PASSWORD_PLACEHOLDER', 'Nhập mật khẩu của bạn');
 define('LOGIN_BUTTON', 'Đồng ý');
 define('REGISTER_LINK', 'Đăng ký tài khoản');
 //alert login
-define('WRONG_USERNAME', 'Tai khoan khong hop lẹ!');
+define('WRONG_USERNAME', 'Tài khoản không hợp lệ!');
 define('WRONG_PASSWORD', 'Mật khẩu không hợp lệ!');
-define('LOGIN_SUCCESS', 'Dang nhap thanh cong̣!');
-define('WRONG_USERNAME_OR_PASSWORD', 'Tài khoản và mật khẩu không chính xác!');
+define('LOGIN_SUCCESS', 'Đăng nhập thành công!');
+define('WRONG_USERNAME_OR_PASSWORD', 'Tài khoản và mật khẩu không chính xác!');
 //alert logout
 define('LOGOUT_CONFIRM', 'Xác nhận đăng xuất?');
 define('LOGOUT_FAILED', 'Đăng xuất thất bại!');
-define('LOGOUT_SUCCESS', 'Dang xuat thanh cong!');
+define('LOGOUT_SUCCESS', 'Đăng xuất thành công!');
 //product
-define('CATEGORY_PRODUCT', 'Loại Sản Phẩm: ');
+//define('CATEGORY_PRODUCT', 'Sản Phẩm: ');
 define('LOGIN_PRODUCT', 'ĐĂNG NHẬP');
 //detail product form
 define('PRICE_DETAIL', 'Giá: ');
@@ -51,6 +52,8 @@ define('AMOUNT_DETAIL', 'Số lượng: ');
 define('UNIT_DETAIL', 'Đơn vị tính: ');
 define('CATEGORY_DETAIL', 'Loại sản phẩm: ');
 define('INFOR_PRODUCT_DETAIL', 'Thông tin sản phẩm');
+define('CART_SUM','Giở hàng');
+define('CART_CON','Tiếp tục');
 //cart
 define('ADD_PRODUCT_SUCCESS', 'Thêm mới sản phẩm vào giỏ hàng thành công!');
 define('UPDATE_PRODUCT_SUCCESS', 'Cập nhật số lượng vào giỏ hàng thành công!');
@@ -67,18 +70,18 @@ define('REGISTER_INFOMATION_ORTHER', 'Thông Tin Khác');
 
 define('REGISTER_USER', 'Tên Đăng Nhập');
 define('REGISTER_PASSWORD', 'Mật Khẩu');
-define('REGISTER_PASSWORD_AGAIN', 'NHập lại mật khẩu: ');
+define('REGISTER_PASSWORD_AGAIN', 'Nhập lại mật khẩu ');
 define('REGISTER_EMAIL', 'Email');
 
-define('REGISTER_ADDRESS', 'Địa Chỉ: ');
-define('REGISTER_DISTRICT', 'Quận: ');
-define('REGISTER_PROVINCE', 'Thành Phố: ');
-define('REGISTER_STREET', 'Đường: ');
+define('REGISTER_ADDRESS', 'Địa Chỉ ');
+define('REGISTER_DISTRICT', 'Quận ');
+define('REGISTER_PROVINCE', 'Thành Phố ');
+define('REGISTER_STREET', 'Đường ');
 
-define('REGISTER_PHONENUMBER', 'Số Điện Thoại: ');
-define('REGISTER_NAME', 'Tên: ');
-define('REGISTER_DATE', 'Ngày Sinh: ');
-define('REGISTER_POINT', 'Điểm: ');
+define('REGISTER_PHONENUMBER', 'Số Điện Thoại ');
+define('REGISTER_NAME', 'Họ và Tên ');
+define('REGISTER_DATE', 'Sinh Nhật ');
+define('REGISTER_POINT', 'Điểm ');
 
 define('REGISTER_NEXT', 'tới');
 define('REGISTER_LAST', 'cuối cùng');
@@ -154,12 +157,14 @@ define('PROMOTIONS_EMPTY', 'Chưa có chương trình khuyến mãi tại thời
 
 
 //form add
-define('ADD_DOCUMENT','PDF');
-define('ADD_DOWNLOAD_DOCUMENT','Download PDF');
+define('ADD_DOCUMENT','Brochure');
+define('ADD_DOWNLOAD_DOCUMENT','Tải về Brochure');
 define('ADD_CART','Thêm vào giỏ hàng');
 define('CONTENT','Thêm vào giỏ hàng');
 define('PROMOTIONS_CONTENT_PROGRAM_1', 'Nội dung khuyến mãi: ');
 define('PRODUCTS_INFOR', 'Nội dung khuyến mãi: ');
+define('SALE_OFF','Giá khuyến mãi:');
+
 
 
 //===============================================================================
@@ -171,28 +176,28 @@ define('CART_PRODUCT','Sản phẩm');
 define('CART_QUANTITY', 'Số lượng');
 define('CART_COST', 'Giá');
 define('CART_PROMOTION', 'Khuyến mãi');
-define('CART_MONEY', 'Thành tiền');
+define('CART_MONEY', 'Tổng cộng (10% VAT)');
 define('CART_ACTION', 'Tác vụ'); 
 define('CART_SEND_REQUIRE', 'Gửi yêu cầu');   
 define('CART_M_DISCOUNT', 'Giảm giá với thành viên'); 
-define('CART_PROPORTION', 'tỷ lệ');  
+define('CART_PROPORTION', 'Tỷ lệ');  
 define('CART_DISCOUNT_PROGRAM', 'Giảm giá với chương trình khuyến mãi');      
 define('CART_DETROY', 'Hủy gửi'); 
 define('CART_SUCCESS', 'Gửi thành công'); 
-define('CART_EMPTY', 'giỏ hàng rỗng');
+define('CART_EMPTY', 'Giỏ hàng rỗng');
 define('CART_CONFIRM_PASSWORD', 'Vui lòng nhập lại mật khẩu'); 
 define('CART_CAPTA_INCORRECT', 'mật khẩu không khớp !!');
 define('CART_EMAIL_INCORRECT', 'Email không hợp lệ!!');
-define('CART_ADDESS_INCORRECT', 'địa chỉ không hợp lệ');
+define('CART_ADDESS_INCORRECT', 'Địa chỉ không hợp lệ');
 define('CART_STRESS_INCORRECT', 'Đường không hợp lệ !!');
 define('CART_DISTRICT_INCORRECT', 'Quận huyện không hợp lệ !!');
 define('CART_PROVINCE_INCORRECT', 'Tỉnh thành phố không hợp lệ !!');
 define('CART_NAME_INCORRECT', 'Tên không hợp lệ !!');
 define('CART_DATE_CORRECT', 'Ngày sinh hợp lệ !!');
 define('CART_PHONENUMBER_CORRECT', 'Số điện thoại hợp lệ !!');
-define('CART_CHANGE_SUCCESS', 'Thay doi thong tin ca nhan thanh cong!');
+define('CART_CHANGE_SUCCESS', 'Thay đổi thông tin cá nhân thành công!');
 define('CART_USEDTO_EMAIL', 'Email này đã được sử dụng để đăng ký trước đó!');
-define('CART_CHANGE_INFO_LOSE', 'Thay doi thong tin ca nhan that bai!');
+define('CART_CHANGE_INFO_LOSE', 'Thay đổi thông tin cá nhân thất bại!');
 
 define('CART_DELETE_ITEM_SUCCESS', 'Xóa sản phẩm khỏi giỏ hàng thành công!');
 define('CART_INVALID_AMOUNT', 'Số lượng không phù hợp!');
@@ -205,9 +210,9 @@ define('CART_UPDATE_ITEM_SUCCESS', 'Cập nhật sản phẩm thành công!');
 //
 //===============================================================================
 
-define('CONTACT_EMPTY', 'Mã capta không được rỗng');
-define('CONTACT_CAPTA_INCORRECT', 'Mã Capta sai');
-define('CONTACT_REVIEW', 'Gui phan hoi thanh cong. Cảm ơn bạn, chúng tôi sẽ xem xét và trả lời trong thời gian sớm nhất !');
+define('CONTACT_EMPTY', 'Mã captcha không được rỗng');
+define('CONTACT_CAPTA_INCORRECT', 'Mã Captcha sai');
+define('CONTACT_REVIEW', 'Gửi phản hồi thành công. Cảm ơn bạn, chúng tôi sẽ xem xét và trả lời trong thời gian sớm nhất !');
 
 
 //===============================================================================
@@ -220,5 +225,5 @@ define('REGISTER_CONFIRM_PASSWORD_AGAIN', 'Mật khẩu và xác nhận mật kh
 define('REGISTER_SUCCESS', 'Đăng ký thành công');
 define('REGISTER_USER_TO_BE', 'Người dùng đã tồn tại!');
 define('REGISTER_EMAIL_TO_BE', 'Email này đã được sử dụng để đăng ký trước đó!');
-define('REGISTER_UNSUCCESS', 'Dang ky khong thanh cong!');
+define('REGISTER_UNSUCCESS', 'Đăng ký không thành công!');
 define('REGISTER_NAME_CORRECT', 'Tên hợp lệ !!');

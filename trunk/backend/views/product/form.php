@@ -1,4 +1,3 @@
-
 <div class="panel panel-default">
     <div class="panel-heading"><i class="glyphicon glyphicon-th-list"></i>&nbsp;<?= PRODUCT_EDIT_TITLE ?></div>
     <div class="panel-body">
@@ -104,7 +103,7 @@
                 <div class="form-group" id="tilegiam" style="<?= isset($current_promotion['PRICE_OFF']) ? "display: block" : "display: none"; ?>">
                     <label for="price_off" class="col-sm-3 control-label"><?= PRODUCT_EDIT_PRICE_OFF ?></label>
                     <div class="col-sm-9">
-                        <input name="price_off" type="number" value="<?= isset($current_promotion['PRICE_OFF']) ? $current_promotion['PRICE_OFF'] : 0; ?>" class="form-control" id="price_off" placeholder="0" min="0" max="1" step="0.01" required=""/>
+                        <input name="price_off" type="number" value="<?= isset($current_promotion['PRICE_OFF']) ? $current_promotion['PRICE_OFF'] : 0; ?>" class="form-control" id="price_off" placeholder="0" max="1" step="0.01" required=""/>
                     </div>
                 </div>  
                 <?php

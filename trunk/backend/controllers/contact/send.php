@@ -9,7 +9,8 @@ if (!empty($_POST)) {
     );
     save('contact', $contactz);
     //load view
+    $id =  intval($_POST['id']);
     require('libraries/sendmail/sendauth.php');
-    $url = 'location:admin.php?controller=contact&action=respone&cid=' . intval($_POST['id']) . '&statusupdate=true';
-    header($url);
+  //$url = 'location:admin.php?controller=contact&action=respone&cid=' . intval($_POST['id']) . '&statusupdate=true';
+  //  header($url);
 }

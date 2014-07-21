@@ -66,7 +66,7 @@
                             </td>
                         </tr>
                         <tr id="price_off_id">
-                            <td>Giảm còn (un):</td>
+                            <td><?= SALE_OFF ?></td>
                             <td>
                                 <span style="<?php
                                 if (isset($_SESSION['language']) && $_SESSION['language'] == "english") {
@@ -128,12 +128,12 @@
                         <tr >
                             <td >
                                 <a onclick="$('#largeModal').modal('hide')" data-toggle="modal" data-target="#dialogCartID" id="dialogCartIDLink1">
-                                        go cart
+                                        <?= CART_SUM ?>
                                 </a>
                             </td>
                             <td >
                                 <a onclick="$('#largeModal').modal('hide')" href="#.service">
-                                    buy continue
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<?= CART_CON ?>
                                 </a>
                             </td>
                         </tr>

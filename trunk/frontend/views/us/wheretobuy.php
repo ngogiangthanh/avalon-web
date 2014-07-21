@@ -1,4 +1,4 @@
-<style >
+<style type="text/css">
     .cont{
         line-height: 2em;
         font-weight: bold ;
@@ -12,7 +12,7 @@
 <h3><b><?= WHERE_TO_BUY ?></b></h3>
 <div class="bor hidden-xs"></div>
 <div class="row">
-        <div id="main-slider" class="col-md-12 liquid-slider">
+        <div id="main-slider" class="liquid-slider">
             <?php foreach ($branches as $branch): ?>  
                 <div>
                     <h2 class="title"><?=$branch['NAME_BRANCH'];?></h2>

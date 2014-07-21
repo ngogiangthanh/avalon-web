@@ -70,10 +70,10 @@ $countCart = (isset($_SESSION['cart'])) ? count($_SESSION['cart']) : 0;
                             $percent = 0.03;
                         }
                         if ($percent > $product['price_off']) {
-                            echo CART_M_DISCOUNT . $type . "<br/>" . CART_PROPORTION . ($percent * 100) . "%";
+                            echo CART_M_DISCOUNT . $type . "<br/>" . ($percent * 100) . "%";
                         } else {
                             $percent = $product['price_off'];
-                            echo CART_DISCOUNT_PROGRAM . "<br/> " . CART_PROPORTION . ($product['price_off'] * 100) . "%";
+                            echo CART_DISCOUNT_PROGRAM . "<br/> " . ($product['price_off'] * 100) . "%";
                         }
                         ?>
                     </td>

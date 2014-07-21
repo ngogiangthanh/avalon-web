@@ -40,28 +40,28 @@
                                         <tr>
                                             <td valign="top" style="width: 25%">
                                                 <!--Tên chương trình :-->
-                                                +&nbsp;<?= PROMOTIONS_NAME_PROGRAM ?>
+                                                &nbsp;<?= PROMOTIONS_NAME_PROGRAM ?>
                                             </td>
                                             <td style="font-weight: bold ;width: 75%" > <?= $promotions[0]['NAME_PROMOTION'] ?></td>
                                         </tr>
                                         <tr >
                                             <td valign="top">
                                                 <!--Nội dung chương trình :-->
-                                                +&nbsp;<?= PROMOTIONS_CONTENT_PROGRAM ?>
+                                                &nbsp;<?= PROMOTIONS_CONTENT_PROGRAM ?>
                                             </td>
                                             <td style="font-weight: bold ;" > <?= $promotions[0]['CONTENT_PROMOTION'] ?></td>
                                         </tr>
                                         <tr >
                                             <td>
                                                 <!--Thời gian áp dụng :-->
-                                                +&nbsp;<?= PROMOTIONS_TIME_APPLY ?>
+                                                &nbsp;<?= PROMOTIONS_TIME_APPLY ?>
                                             </td>
                                             <td style="font-weight: bold ;" > <?= $promotions[0]['TIME_START'] ?></td>
                                         </tr>
                                         <tr >
                                             <td>
                                                 <!--Thời gian kết thúc :-->
-                                                +&nbsp;<?= PROMOTIONS_TIME_FINISH ?>
+                                                &nbsp;<?= PROMOTIONS_TIME_FINISH ?>
                                             </td>
                                             <td style="font-weight: bold ;" > <?= $promotions[0]['TIME_END'] ?></td>
                                         </tr>
@@ -129,7 +129,7 @@
                                                     <?= $promotion['PRICE_USD'] ?>
                                                 </td>
                                                 <td style="font-weight: bold;color: red;">
-                                                    <?= ($promotion['PRICE_OFF'] * 100) . "%" ?>
+                                                    <?= ($promotion['PRICE_OFF'] != 0)? ($promotion['PRICE_OFF'] * 100) . "%" : "X" ?>
                                                 </td>
                                                 <td style="font-weight: bold;color: red;">
                                                     <?= $promotion['PRICE_VND_OFF'] ?>

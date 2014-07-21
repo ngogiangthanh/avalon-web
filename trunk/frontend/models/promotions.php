@@ -31,8 +31,7 @@ function PromotionsSelect() {
                         WHERE
                         current_date() BETWEEN promotions.TIME_START AND  promotions.TIME_END
                         ORDER BY
-                        product.NAME_PRO ASC
-                        LIMIT 0,1";
+                        product.NAME_PRO ASC";
     $result = mysql_query($sql);
     //Chuyển đổi dữ liệu từ cấu trúc của result từ quert mysql về cấu trúc dạng danh sách mảng của php
     $promotions = array();

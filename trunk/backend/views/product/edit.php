@@ -81,14 +81,8 @@ if (isset($_GET['statuspdf']) && $_GET['statuspdf'] == 'true') {
                     $("#tilegiam").fadeOut("slow");
                 }
             });
-            $("#btnsubmitproduct").click(function() {
-                if ($("#id_promotion").val() != 'choose' && $("#price_off").val() == 0)
-                {
-                    toastr.error("<?= PRODUCT_EDIT_ALERT_PROMOTION_PRICE_OFF_WRONG ?>");
-                    $("#price_off").focus();
-                    return false;
-                }
-            });
+            
+            
         });
     </script>
 </body>

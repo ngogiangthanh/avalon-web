@@ -1,5 +1,6 @@
 <div class="panel panel-default">
-    <div class="panel-heading"><i class="glyphicon glyphicon-repeat"></i>&nbsp;<?= CONTACT_RESPONE_TITLE ?></div>
+    <div class="panel-heading"><i class="glyphicon glyphicon-repeat"></i>&nbsp;<?= CONTACT_RESPONE_TITLE ?> </div>
+
     <div class="panel-body">
         <form id="product-form" class="form-horizontal" method="post" action="admin.php?controller=contact&amp;action=send" enctype="multipart/form-data" role="form">
             <input name="id" type="hidden" value="<?= $contact ? $contact['ID'] : '0'; ?>"/>

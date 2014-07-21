@@ -91,9 +91,14 @@
                     pdfURL.attr('href', data[0].URL_PDF);
                     idInputPriceOff.val(data[0].PRICE_OFF);
                     if (data[0].NAME_PROMOTION != '') {
+                    	if(data[0].PRICE_OFF != 0){
                         priceOffVND.append((parseInt(data[0].PRICE_VND.replace(/(,)/g, '')) * (1 - parseFloat(data[0].PRICE_OFF))).format() + " VND (-" + parseFloat(data[0].PRICE_OFF) * 100 + "%)");
                         var piceusd = parseFloat((parseFloat(data[0].PRICE_USD.replace(/(,)/g, '')) * (1 - parseFloat(data[0].PRICE_OFF))).toFixed(2));
                         priceOffUSD.append(piceusd.format() + " USD (-" + parseFloat(data[0].PRICE_OFF) * 100 + "%)");
+                        }
+                        else{
+                        $("#price_off_id").hide();
+                        }
                         namePromotion.append(data[0].NAME_PROMOTION);
                         contentPromotion.append(data[0].CONTENT_PROMOTION);
                     }
@@ -122,4 +127,3 @@
         }
     };
 })(jQuery);
-
