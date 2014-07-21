@@ -4,18 +4,19 @@
  * File chua thong tin define ngon ngu tieng anh
  * 
  */
-define('WEBSITENAME', 'Blue Dolphin');
+define('WEBSITENAME', 'Blue Dolphin EXIM Co.Ltd');
 define('ADMINISTRATOR', 'Management');
 define('LANGUAGE', 'Language');
-define('ENGLISH', 'English');
-define('VIETNAMESE', 'Vietnamese');
+define('LANG','?lang=vietnamese');
+define('LABEL', 'Tiếng Việt');
+define('FLAG','./public/img/vietnamflag.png');
 //
-define('ALERT_INDEX', 'Welcome to my website! Please register before order product');
+define('ALERT_INDEX', 'Welcome to BlueDolphin EXIM Co.Ltd, please register to enjoy promotion!');
 //menu
 define('ABOUT_US', 'About Us');
 define('OUR_PRODUCTS', 'Our Products');
 define('PROMOTIONS', 'Promotion');
-define('WHERE_TO_BUY', 'Where to Buy?');
+define('WHERE_TO_BUY', 'Where to Buy');
 define('MEMBER', 'Member');
 define('CONTACT_US', 'Contact Us');
 //user
@@ -35,14 +36,14 @@ define('REGISTER_LINK', 'Register account');
 //alert login 
 define('WRONG_USERNAME', 'Username wrong format!');
 define('WRONG_PASSWORD', 'Password wrong format!');
-define('LOGIN_SUCCESS', 'Login !');
+define('LOGIN_SUCCESS', 'Login successful!');
 define('WRONG_USERNAME_OR_PASSWORD', 'Wrong username or password!');
 //alert logout 
 define('LOGOUT_CONFIRM', 'Do you want to logout?');
 define('LOGOUT_FAILED', 'Logout failed!');
 define('LOGOUT_SUCCESS', 'Logout successful!');
 //product
-define('CATEGORY_PRODUCT', 'Category: ');
+//define('CATEGORY_PRODUCT', 'Category: ');
 define('LOGIN_PRODUCT', 'LOGIN');
 //detail product form
 define('PRICE_DETAIL', 'Price: ');
@@ -50,6 +51,8 @@ define('AMOUNT_DETAIL', 'Amount: ');
 define('UNIT_DETAIL', 'Unit: ');
 define('CATEGORY_DETAIL', 'Category: ');
 define('INFOR_PRODUCT_DETAIL', 'Product information');
+define('CART_SUM','Cart Summary');
+define('CART_CON','Continue Shopping');
 //cart
 define('ADD_PRODUCT_SUCCESS', 'Add product successful!');
 define('UPDATE_PRODUCT_SUCCESS', 'Update product successful!');
@@ -59,24 +62,24 @@ define('UPDATE_PRODUCT_OUT_OF_RANGE', 'Product amount in cart more than 100!');
 //===============================================================================
 define('REGISTER_MEMBER', 'REGISTER MEMBER');
 
-define('REGISTER_INFOMATION_BASE', 'Base information');
+define('REGISTER_INFOMATION_BASE', 'Basic Information');
 define('REGISTER_INFOMATION_CONTACT', 'Contact Information');
-define('REGISTER_INFOMATION_ORTHER', 'Orther Information');
+define('REGISTER_INFOMATION_ORTHER', 'Other Information');
 
-define('REGISTER_USER', 'Username: ');
-define('REGISTER_PASSWORD', 'Password: ');
+define('REGISTER_USER', 'Username ');
+define('REGISTER_PASSWORD', 'Password ');
 define('REGISTER_PASSWORD_AGAIN', 'Password (AGAIN) : ');
-define('REGISTER_EMAIL', 'Email: ');
+define('REGISTER_EMAIL', 'Email ');
 
-define('REGISTER_ADDRESS', 'Address: ');
-define('REGISTER_DISTRICT', 'District: ');
-define('REGISTER_PROVINCE', 'Province: ');
-define('REGISTER_STREET', 'Street: ');
+define('REGISTER_ADDRESS', 'Address ');
+define('REGISTER_DISTRICT', 'District ');
+define('REGISTER_PROVINCE', 'Province ');
+define('REGISTER_STREET', 'Street ');
 
-define('REGISTER_PHONENUMBER', 'Phone number: ');
-define('REGISTER_NAME', 'Name: ');
-define('REGISTER_DATE', 'Date: ');
-define('REGISTER_POINT', 'Point: ');
+define('REGISTER_PHONENUMBER', 'Phone number(only 10 or 11 digits)');
+define('REGISTER_NAME', 'Full Name ');
+define('REGISTER_DATE', 'Date of birth ');
+define('REGISTER_POINT', 'Point ');
 
 define('REGISTER_NEXT', 'Next');
 define('REGISTER_LAST', 'Last');
@@ -95,21 +98,21 @@ define('PROFILE_INFOMATION_BASE', 'Base information');
 define('PROFILE_INFOMATION_CONTACT', 'Contact Information');
 define('PROFILE_INFOMATION_ORTHER', 'Orther Information');
 
-define('PROFILE_USERNAME', 'Username: ');
-define('PROFILE_PASSWORD', 'Password: ');
+define('PROFILE_USERNAME', 'Username ');
+define('PROFILE_PASSWORD', 'Password ');
 define('PROFILE_PASSWORD_DELAY', 'Enter your password');
-define('PROFILE_PASSWORD_DELAY_PLEASE', 'Please enter your password');
-define('PROFILE_EMAIL', 'Email: ');
+define('PROFILE_PASSWORD_DELAY_PLEASE', 'Please re-enter your password');
+define('PROFILE_EMAIL', 'Email ');
 
-define('PROFILE_ADDRESS', 'Address: ');
-define('PROFILE_DISTRICT', 'District: ');
-define('PROFILE_PROVINCE', 'Province: ');
-define('PROFILE_STREET', 'Street: ');
+define('PROFILE_ADDRESS', 'Address ');
+define('PROFILE_DISTRICT', 'District ');
+define('PROFILE_PROVINCE', 'Province ');
+define('PROFILE_STREET', 'Street ');
 
-define('PROFILE_PHONENUMBER', 'Phone number: ');
-define('PROFILE_NAME', 'Name: ');
-define('PROFILE_DATE', 'Date: ');
-define('PROFILE_POINT', 'Level: ');
+define('PROFILE_PHONENUMBER', 'Phone number ');
+define('PROFILE_NAME', 'Full name ');
+define('PROFILE_DATE', 'Date ');
+define('PROFILE_POINT', 'Level ');
 define('PROFILE_EDIT', 'Edit');
 define('PROFILE_CLOSED', 'Closed');
 
@@ -135,10 +138,10 @@ define('USER_CONTACT_CLOSED', 'Closed');
 //===============================================================================
 
 define('PROMOTIONS_INFOR_PROGRAM', 'Promotion program information');
-define('PROMOTIONS_NAME_PROGRAM', 'Promotion name: ');
-define('PROMOTIONS_CONTENT_PROGRAM', 'Promotion content: ');
-define('PROMOTIONS_TIME_APPLY', 'begin: ');
-define('PROMOTIONS_TIME_FINISH', 'end: ');
+define('PROMOTIONS_NAME_PROGRAM', 'Promotion name ');
+define('PROMOTIONS_CONTENT_PROGRAM', 'Promotion content ');
+define('PROMOTIONS_TIME_APPLY', 'Begin ');
+define('PROMOTIONS_TIME_FINISH', 'End ');
 define('PROMOTIONS_INFOR_PRODUCT', 'Promotion product information');
 define('PROMOTIONS_STT', 'STT');
 define('PROMOTIONS_NAME_PRODUCT', 'Promotion name: ');
@@ -152,30 +155,31 @@ define('PROMOTIONS_EMPTY', 'Sorry, we don\'t have any promotion at this time, pl
 
 
 //form add
-define('ADD_DOCUMENT','DOCUMENT');
-define('ADD_DOWNLOAD_DOCUMENT','DOCUMENT');
+define('ADD_DOCUMENT','Brochure:');
+define('ADD_DOWNLOAD_DOCUMENT','Download Brochure');
 define('ADD_CART','ADD TO CART');
 define('CONTENT','CONTENT');
 define('PROMOTIONS_CONTENT_PROGRAM_1', 'Promotion content: ');
 define('PRODUCTS_INFOR', 'Products information');
+define('SALE_OFF','Price after discount:');
 
 
 //===============================================================================
 //Cart
 //===============================================================================
-define('CART_STT', 'STT');
+define('CART_STT', 'Number');
 define('CART_IMAGE', 'Image');
 define('CART_PRODUCT', 'Products');
 define('CART_QUANTITY', 'Quantity');
-define('CART_COST', 'Cost');
+define('CART_COST', 'Unit Price');
 define('CART_PROMOTION', 'Promotion');
-define('CART_MONEY', 'Money');
+define('CART_MONEY', 'Total Amount (include 10% VAT)');
 define('CART_ACTION', 'Action');    
-define('CART_SEND_REQUIRE', 'Send require');   
+define('CART_SEND_REQUIRE', 'Send order');   
 define('CART_M_DISCOUNT', 'Discount with member'); 
 define('CART_PROPORTION', 'Proportion'); 
 define('CART_DISCOUNT_PROGRAM', 'Discount for promotion program');    
-define('CART_DETROY', 'Send detroy');   
+define('CART_DETROY', 'Cancel order');   
 define('CART_SUCCESS', 'Send success'); 
 define('CART_EMPTY', 'Cart empty'); 
 define('CART_CONFIRM_PASSWORD', 'Please, confirm password'); 

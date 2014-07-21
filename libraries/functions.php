@@ -147,20 +147,21 @@ function upload($field, $config = array()) {
         $resizeObj->saveImage($file_path_thumb, 100);
         return array("img" => $file_path, "thumb" => $file_path_thumb);
     } else { //up FILE PDF
-        $finfo = finfo_open(FILEINFO_MIME_TYPE);
-        $mime = finfo_file($finfo, $file["tmp_name"]);
-        switch ($mime) {
-            case 'image/jpeg':
-            case 'application/pdf':
-                //nếu cho phép ghi đè
-                if ($options['overwrite'] && file_exists($file_path)) {
+          if ($options['overwrite'] && file_exists($file_path)) {
                     unlink($file_path);
                 }
                 move_uploaded_file($file["tmp_name"], $file_path);
                 return $file_path;
-            default:
-                return FALSE; //kiem tra khong hop le dinh dang
-        }
+//        $finfo = finfo_open(FILEINFO_MIME_TYPE);
+//        $mime = finfo_file($finfo, $file["tmp_name"]);
+//        switch ($mime) {
+//            case 'image/jpeg':
+//            case 'application/pdf':
+//                //nếu cho phép ghi đè
+//              
+//            default:
+//                return FALSE; //kiem tra khong hop le dinh dang
+//        }
     }
 }
 

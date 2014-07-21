@@ -18,12 +18,12 @@ if ($pointsuse == 0) {
     <h3><?= ORDER_PRINT_AVALON_WEBSITE ?></h3>
     <table id="info" class="table">
         <tr>
-            <td><?= ORDER_PRINT_AVALON_NAME ?>: Avalon</td>
+            <td><?= ORDER_PRINT_AVALON_NAME ?>: <?php echo $_SESSION['login'][3]; ?></td>
             <td><?= ORDER_PRINT_AVALON_ADDRESS ?>: 131D/5, Nguyễn Văn Cừ nối dài, Ninh Kiều, Tp Cần Thơ.</td>
         </tr>
         <tr>
             <td><?= ORDER_PRINT_AVALON_PHONE ?>: 09123456789</td>
-            <td><?= ORDER_PRINT_AVALON_EMAIL ?>: admin@gmail.com</td>
+            <td><?= ORDER_PRINT_AVALON_EMAIL ?>: inquiry@bluedolphin.com.vn</td>
         </tr>
     </table>
 </div>

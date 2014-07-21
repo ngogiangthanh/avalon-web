@@ -3,8 +3,8 @@ SetEnv TZ Asia/Ho_Chi_Minh
 # set the default ErrorDocument
 ErrorDocument 400 "Bad request"
 ErrorDocument 401 "Authorization Required"
-ErrorDocument 403 "Virus detected" 
-ErrorDocument 404 "Wrong page"
+ErrorDocument 403 "Forbidden. You cannot access this file." 
+ErrorDocument 404 "Wrong page. <br/><a href='http://bluedolphin.com.vn'>Back tHome</a>"
 ErrorDocument 500 "Internal Server Error" 
 # Disable list directory
 Options All -Indexes 
@@ -18,8 +18,8 @@ deny from all
 </files> 
 <IfModule mod_php5.c>
     #Session timeout
-    php_value session.cookie_lifetime 3600
-    php_value session.gc_maxlifetime 3600
+ 	 #  php_value session.cookie_lifetime 3600
+ 	#  php_value session.gc_maxlifetime 3600
 </IfModule>
 <Files *.php>
     Order Deny,Allow
@@ -39,6 +39,6 @@ deny from all
     Order Allow,Deny
     Allow from all
 </Files>
-order deny,allow
+#order deny,allow
 #deny from all
 #allow from 42.117.255.68

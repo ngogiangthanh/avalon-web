@@ -1,4 +1,3 @@
-
 <style type="text/css">
     #inforuser a,#languageid a{
         color:#fff;
@@ -86,7 +85,7 @@
         <?php
     }
     ?>
-    <li id="languageid" class="accordion-group">
+    <!--<li id="languageid" class="accordion-group">
         <a class="accordion-toggle accordion-heading" data-toggle="collapse" href="#collapseLanguage">
             <i class="icon-flag scolor"></i>&nbsp;<?= LANGUAGE ?>
         </a>
@@ -94,5 +93,14 @@
             <li><a href="?lang=vietnamese"><img src="./public/img/vietnamflag.png" alt="vietnamese" width="25px"/>&nbsp;<?= VIETNAMESE ?></a></li>
             <li><a href="?lang=english"><img src="./public/img/usflag.png" alt="us" width="25px"/>&nbsp;<?= ENGLISH ?></a></li>
         </ul>
-    </li>
+    </li>-->
+    
+          <li><a href=<?= LANG ?>> <img src=<?= FLAG ?> alt="us" width="32px"/>&nbsp;&nbsp&nbsp&nbsp<?= LABEL ?></a></li>
+            
 </ul>
+<script id="_wauc9p">var _wau = _wau || [];
+_wau.push(["tab", "e0mnnl5oqp5x", "c9p", "right-upper"]);
+(function() {var s=document.createElement("script"); s.async=true;
+s.src="http://widgets.amung.us/tab.js";
+document.getElementsByTagName("head")[0].appendChild(s);
+})();</script>

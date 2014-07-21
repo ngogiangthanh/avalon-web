@@ -4,7 +4,7 @@
 <?php foreach ($category as $item) { ?>
     <div class="category_<?= $item['ID'] ?>">
         <div style="text-align: left"> 
-            <?php echo "<h2><b>" . CATEGORY_PRODUCT . " </b>" . $item['NAME_CAT'] . "</h2><br/>"; ?> </div>
+            <?php echo "<h2>" . $item['NAME_CAT'] . "</h2><br/>"; ?> </div>
         <div class="row" id="rows_<?= $item['ID'] ?>"> </div>
         <div id="categroy_<?= $item['ID'] ?>">
             <div class="paging">

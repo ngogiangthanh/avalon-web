@@ -143,10 +143,10 @@
                                 + '<h4><a data-toggle="modal" class="openDetailDiaLog" href="#largeModal" data-id="' + val.ID + '">' + val.NAME_PRO + '</a></h4>'
 
                         if (language === 'english') {
-                            if (val.NAME_PROMOTION != '') {
-                                var price_off_usd = parseFloat((parseFloat(data[0].PRICE_USD.replace(/(,)/g, '')) * (1 - parseFloat(data[0].PRICE_OFF))).toFixed(2)).format() + " USD (-" + parseFloat(data[0].PRICE_OFF) * 100 + "%)";
+                            if (val.NAME_PROMOTION != '' && val.PRICE_OFF != 0) {
+                                var price_off_usd = parseFloat(val.PRICE_OFF) * 100 + "% ("+parseFloat((parseFloat(val.PRICE_USD.replace(/(,)/g, '')) * (1 - parseFloat(val.PRICE_OFF))).toFixed(2)).format() + " USD)";
                                 str += '<p style="color: green;font-size: 16px;font-weight: bold;">Price: ' + val.PRICE_USD + ' USD</p>'
-                                        + '<p style="color:red;font-size: 16px;font-weight: bold"> Sale off: ' + price_off_usd + '</p>';
+                                        + '<p style="color:red;font-size: 16px;font-weight: bold"> Discount: ' + price_off_usd + '</p>';
                             }
                             else {
                                 str += '<p style="color: green;font-size: 16px;font-weight: bold">Price: ' + val.PRICE_USD + ' USD</p>';
@@ -154,10 +154,10 @@
                         }
                         else
                         {
-                            if (val.NAME_PROMOTION != '') {
-                                var price_off_vnd = (parseInt(data[0].PRICE_VND.replace(/(,)/g, '')) * (1 - parseFloat(data[0].PRICE_OFF))).format() + " VND (-" + parseFloat(data[0].PRICE_OFF) * 100 + "%)";
+                            if (val.NAME_PROMOTION != '' && val.PRICE_OFF != 0) {
+                                var price_off_vnd = parseFloat(val.PRICE_OFF) * 100 + "% ("+(parseInt(val.PRICE_VND.replace(/(,)/g, '')) * (1 - parseFloat(val.PRICE_OFF))).format() + " VND)";
                                 str += '<p style="color: green;font-size: 16px;font-weight: bold">Giá: ' + val.PRICE_VND + ' VND</p>'
-                                        + '<p style="color:red;;font-size: 16px;font-weight: bold">Giảm còn: ' + price_off_vnd + '</p>';
+                                        + '<p style="color:red;;font-size: 16px;font-weight: bold">Giảm: ' + price_off_vnd + '</p>';
                             }
                             else {
                                 str += '<p style="color: green;font-size: 16px;font-weight: bold">Giá: ' + val.PRICE_VND + ' VND</p>';
@@ -175,4 +175,3 @@
         }
     };
 })(jQuery);
-

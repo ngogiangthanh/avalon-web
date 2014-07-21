@@ -17,6 +17,7 @@
                 <div class="page-header">
                     <center>
                         <h3><?= CONTACT_US ?></h3>
+                        (Phone number: +84 9399 20030)
                     </center>
                 </div>
                 <form role="form" class="form">
