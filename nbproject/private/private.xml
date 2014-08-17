@@ -11,15 +11,6 @@
         </file>
     </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group>
-            <file>file:/C:/xampp/htdocs/myshop/public/css/liquid-slider.css</file>
-            <file>file:/C:/xampp/htdocs/myshop/public/js/jquery.liquid-slider.min.js</file>
-            <file>file:/C:/xampp/htdocs/myshop/frontend/views/common/banner.php</file>
-            <file>file:/C:/xampp/htdocs/myshop/language/english.php</file>
-            <file>file:/C:/xampp/htdocs/myshop/frontend/views/us/wheretobuy.php</file>
-            <file>file:/C:/xampp/htdocs/myshop/frontend/views/layouts/penny.php</file>
-            <file>file:/C:/xampp/htdocs/myshop/libraries/sendmail/sendauth.php</file>
-            <file>file:/C:/xampp/htdocs/myshop/language/vietnamese.php</file>
-        </group>
+        <group/>
     </open-files>
 </project-private>
